@@ -55,12 +55,8 @@ body {
   background: #000;
 
   }
-  @-webkit-keyframes animateBackground {
-    0% { background-size: 100% auto; }
-    50% { background-size: 130% auto; }
-    100% { background-size: 100% auto; }
-  }
-.body-cum {background: url('../img/cumming-bg.jpg');  -webkit-animation: animateBackground infinite ease-in-out 140s;}
+
+.body-cum {background: url('../img/cumming-bg.jpg');background-size: cover;}
 
 
 
@@ -82,7 +78,7 @@ body {
   header nav {display:flex;align-content: center;align-items: center;}
   header nav ul {display:flex;width: 300px;justify-content: space-between;margin: 0;padding: 0;}
   header nav ul li {list-style: none;}
-  header nav ul li a, header nav .nav-link,  header nav .nav-link:hover {color: #fff !important;transition: color .35s ease;position: relative;}
+  header nav ul li a, header nav .nav-link,  header nav .nav-link:hover {color: #fff !important;transition: color .35s ease;position: relative;font-weight: 100;}
   header nav li a.active {color:#fff !important}
   header nav li a.active:after {
       content: '';
@@ -126,16 +122,60 @@ body {
 
   .locations{
     height:200px;
-    opacity: 0.6000000238418579;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.34) 0%, rgba(243, 243, 243, 0.03) 100%);
+    /* opacity: 0.6000000238418579; */
+    background: linear-gradient(90deg, rgb(109 109 109 / 22%) 0%, rgb(255 255 255 / 6%) 100%);
     backdrop-filter: blur(4px);
     text-align: left;
     padding: 20px 0;
   }
 .location-cont {display:flex;padding: 20px 13px;justify-content: space-between;}
 ul.loc {padding:0}
-ul.loc li a {color: #fff;font-size: 18px;}
-ul.loc li a:hover {text-decoration: underline;}
+
+ul.loc li {margin: 5px 0;}
+
+ul.loc li a {color: #fff;font-size: 18px;position: relative;transition: 0.3s;font-weight: 100;}
+
+ul li a:hover {color:#FFB554}
+
+ul.loc li  a.active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  background: #D5FF40;
+  }
+  .loc li a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 1px;
+  width: 0;
+  transition: width 0s ease, background .35s ease;
+}
+.loc li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  height: 2px;
+  width: 0;
+  background: #FFB554;
+  transition: width .35s ease;
+}
+.loc li a:hover:before {
+  width: 100%;
+  background: #FFB554;
+  transition: width .35s ease;
+}
+
+
+
 
 /* hover locations */
 a.hover-locations {
@@ -187,11 +227,58 @@ a.hover-locations:hover span {
 }
 
 
+.accordion {display: none;}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 18px;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    background-color:transparent;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+}
+
+.accordion {
+    --bs-accordion-color:#fff;
+    --bs-accordion-bg: transparent;
+    --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
+    --bs-accordion-border-color:none ;
+    --bs-accordion-inner-border-radius: calc(var(
+    --bs-border-radius) - (var(--bs-border-width)));
+    --bs-accordion-btn-padding-x: 1.25rem;
+    --bs-accordion-btn-padding-y: 1rem;
+    --bs-accordion-btn-color: #fff;
+    --bs-accordion-btn-bg: transparent;
+    --bs-accordion-btn-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Cpath d='M5.44388 10.7027C4.85204 11.2866 4.85204 12.2333 5.44388 12.8172L12.8585 20.1251C14.0425 21.292 15.9609 21.2916 17.1443 20.1241L24.5561 12.8119C25.148 12.228 25.148 11.2812 24.5561 10.6973C23.9642 10.1132 23.0046 10.1132 22.4127 10.6973L16.069 16.9558C15.477 17.5397 14.5175 17.5397 13.9256 16.9558L7.58724 10.7027C6.9954 10.1188 6.03572 10.1188 5.44388 10.7027Z' fill='white'/%3E%3C/svg%3E");
+    --bs-accordion-btn-icon-width: 1.25rem;
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-active-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Cpath d='M5.44388 10.7027C4.85204 11.2866 4.85204 12.2333 5.44388 12.8172L12.8585 20.1251C14.0425 21.292 15.9609 21.2916 17.1443 20.1241L24.5561 12.8119C25.148 12.228 25.148 11.2812 24.5561 10.6973C23.9642 10.1132 23.0046 10.1132 22.4127 10.6973L16.069 16.9558C15.477 17.5397 14.5175 17.5397 13.9256 16.9558L7.58724 10.7027C6.9954 10.1188 6.03572 10.1188 5.44388 10.7027Z' fill='white'/%3E%3C/svg%3E");
+    --bs-accordion-btn-focus-border-color: transparent;
+    --bs-accordion-btn-focus-box-shadow: transparent;
+    --bs-accordion-body-padding-x: 1.25rem;
+    --bs-accordion-body-padding-y: 1rem;
+    --bs-accordion-active-color: transparent;
+    --bs-accordion-active-bg: transparent;}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: var(--bs-accordion-active-bg);
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    border-bottom: 1px solid #2c2c2c;
+}
+
+.accordion-item:last-of-type .accordion-collapse {border-top:1px solid #000000}
 
 
-
-
-h2 {font-size:20px; font-weight:bold}
+h2 {font-size:20px;font-weight:bold;margin: 0;}
   .cumming-cont {
     display: flex;
     justify-content: center;
@@ -300,24 +387,24 @@ footer ul li a {color: #fff;}
 footer .copyrights {text-align: center; background: #000;}
 footer .copyrights p {font-size: 12px;margin: 0;}
 footer .col-md-2 {display:flex;flex-direction: column;justify-content: center;}
-footer .arrow-background {background: #000;width:70px;height:70px;border-radius:50px;position: absolute;right: 0;top: -33px;}
+footer .arrow-background {background: #000;width:70px;height:70px;border-radius:50px;position: absolute;right: 8%;top: -33px;}
 footer .arrow-circle {background:  linear-gradient(90deg, #DA2321 0%, #9E0301 100%);width: 50px;height: 50px;border-radius: 50px;margin: 10px auto 0;display: flex;flex-direction: column;align-items: center;justify-content: center;}
 
 @media(max-width:1024px) {
 .cumming-cont {gap: 50px}
 .logo {width:200px;}
 .cumming-text {font-size: 40px;}
-h2 {font-size:15px; text-align:center}
+h2 {font-size: 16px;/* text-align:center; */}
 form input {width:59%;height: 48px;}
 form button {width:39%;height: 50px;}
 }
 
 @media (max-width:768px) {
-  .locations {
-    height: 57px;
-    }
+.accordion {display: block;} 
+.desk-only {display:none;}
 .location-cont{display:none}
-.locations {margin-bottom:10px}
+.locations {margin-bottom:10px;height:auto;padding: 0px 0;}
+ul.loc li {margin: 5px 0 16px;}
 .bg-modal {border-radius: 12px;}
 .modal-content .col-6 {padding:20px;display:block;width:100%}
 .modal-content .col-6:first-child {height:225px;}
@@ -353,4 +440,16 @@ footer .logo {margin:0 auto 40px}
 
 @media(max-width: 768px) {
   .modal-dialog {min-height: calc(100vh - 20px);}
+}
+
+
+
+#reveal-content {
+  max-height: 1000px;
+  transition: all 0.5s ease-in;
+}
+
+.hide {
+  max-height: 0 !important;
+  transition: all 0.2s ease-out;
 }
