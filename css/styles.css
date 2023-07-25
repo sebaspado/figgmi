@@ -313,6 +313,10 @@ form button {width:39%;height: 50px;}
 }
 
 @media (max-width:768px) {
+  .locations {
+    height: 57px;
+    }
+.location-cont{display:none}
 .locations {margin-bottom:10px}
 .bg-modal {border-radius: 12px;}
 .modal-content .col-6 {padding:20px;display:block;width:100%}
