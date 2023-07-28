@@ -6,6 +6,7 @@ body {
   color: rgb(255, 255, 255);
 }
 
+a:hover {color:rgb(255, 181, 84);text-decoration:none}
 
 .body-cum {
   background: url("../img/cumming-bg.jpg") 0% 0% / cover;
