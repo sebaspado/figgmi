@@ -877,6 +877,7 @@ form button {
   margin: auto;
   display: block;
   width: 440px;
+  /* top: 40px; */
 }
 
 .modal-age {width:700px}
@@ -907,21 +908,29 @@ form button {
   }
 }
 
+
 .close {
   position: absolute;
-  top: -40px;
+  top: -16px;
   color: rgb(213 33 31) !important;
-  right: 0;
+  right: -4px;
   color: rgb(241, 241, 241);
   font-size: 40px;
   font-weight: bold;
   transition: all 0.3s ease 0s;
+  background: #000 !important;
+  opacity: 1;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  padding: 3px 0 0 1px !important;
 }
 
 .close:hover, .close:focus {
-  color: rgb(187, 187, 187);
+  color: rgb(243 102 100) !important;
   text-decoration: none;
   cursor: pointer;
+opacity:1 !important
 }
 
 footer {
