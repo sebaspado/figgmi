@@ -672,6 +672,9 @@ form button {
   height: 390px;
   padding-right: 15px;
 }
+.slick-list {
+    padding-left: 0px!important; 
+}
 
 .slider .image img {
   height: 100%;
@@ -1027,10 +1030,11 @@ footer .arrow-circle {
 }
 
 @media (max-width: 768px) {
-  .cards {padding-top:0px}
-  footer .copyrights {
-padding:0 20px
-}
+
+.row.no-padding-mobile {padding: 0 0 0 15px !important;}
+.no-padding-mobile .col-md-12 {padding:0}
+.cards {padding-top:0px}
+footer .copyrights {padding:0 20px}
   .notice {font-size:13px;}
   .slick-prev, .slick-next, .modal-next,.modal-prev {
       position: absolute;
@@ -1181,7 +1185,7 @@ padding:0 20px
       margin: auto;
   }
   .profile-1mobile .slider .image {
-    padding-right: 0px;
+    padding-right: 10px;
 }
   
 }
