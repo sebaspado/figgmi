@@ -61,14 +61,36 @@
                 <div class="subscribe">
                     <h2>Wir benachrichtigen Sie, wenn wir live sind!</h2>
                     <form>
-                        <input type="email" placeholder="E-Mail Adresse...">
-                        <button type="button" name="Subcribe" class="button">Einreichen</button>
+                        <input type="email" id="email" placeholder="E-Mail Adresse...">
+                        <button type="submit"  name="Subcribe" class="button-cumming" id="einreichen">Einreichen</button>
+                        <div id="message"></div>
                       </form>
                 </div>
-
             </div>
         </main>
         <script src="js/jquery-3.6.4.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript">
+                    $(document).ready(function (){
+                $("#einreichen").click(function(){
+                    $.ajax({
+                        type: "POST",
+                        url: "https://api.figgmi.ch/api/subscribe/",
+                        data: {
+                            email: $("#email").val()
+                        },
+                        success: function(response){
+                            if (response.success){
+                                $("#message").html("Vielen dank!");
+                            }
+                        },
+                        error: function(response) {
+                            $("#message").html("Etwas ist schief gelaufen! Versuchen Sie es später erneut");
+                        },
+                        dataType: "json"
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
