@@ -38,13 +38,22 @@
                 <nav class="nav-bar">
                     <ul>
                         <li>
-                            <a class="nav-link" href="profiles.html">Home</a>
+                            <a data-translate="menu_home" class="nav-link" href="profiles.html">Home</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#about-us">Locations</a>
+                            <a class="nav-link" data-translate="menu_locations" href="#about-us">Locations</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="contact.html">Contact us</a>
+                            <a class="nav-link" data-translate="menu_contact" href="contact.html">Contact us</a>
+                        </li>
+                        <li>
+                            <select class="lang-select" id="lang">
+                                <option>English</option>
+                                <option>Deutchland</option>
+                                <option>French</option>
+                                <option>Italian</option>
+                                <option>Spanish</option>
+                            </select>
                         </li>
                     </ul>
                 </nav>
@@ -219,7 +228,7 @@
 
 
 
-                <button class="call-me">Call me now
+                <button data-translate="call_me_now" class="call-me">Call me now
                     <span>
                         <img src="img/phone.svg" alt="phone icon">
                     </span>
@@ -241,8 +250,8 @@
                
             </div>
             <!--row end -->
-            <button class="report">Report profile</button>
-            <p class="notice"><strong>Important notice</strong> - Please be careful if an escort asks you to pay in advance.<br> <strong>Figgmi.ch</strong> does NOT take responsibility for fraud or scams.</p>
+            <button data-translate="report_profile" class="report">Report profile</button>
+            <p data-translate="disclaimer" class="notice"><strong>Important notice</strong> - Please be careful if an escort asks you to pay in advance.<br> <strong>Figgmi.ch</strong> does NOT take responsibility for fraud or scams.</p>
 
 
         </div>
@@ -345,6 +354,7 @@
 <script src="js/bootstrap4.js"></script>
 <script src="js/menu.js"></script>
 <script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="js/languages.js"></script>
 <script type="text/javascript">
         var $carousel = $('.regular');
         var settings = {
