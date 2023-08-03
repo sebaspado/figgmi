@@ -95,11 +95,7 @@ $(function () {
 
 
 
-
-
-
-
-
+/* transforma el option en li */ 
 $('.select').each(function(){
   var $this = $(this), numberOfOptions = $(this).children('option').length;
 
@@ -120,7 +116,7 @@ $('.select').each(function(){
           rel: $this.children('option').eq(i).val()
       }).appendTo($list);
       if ($this.children('option').eq(i).is(':selected')){
-        $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
+        $('li [rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
       }
   }
 

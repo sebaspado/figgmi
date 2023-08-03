@@ -20,7 +20,9 @@
 .navigation ul li {width:100%;padding: 20px 0 20px;border-bottom:1px solid #000000;}
 .navigation ul li:after {width:100%; position:absolute;content:"";bottom:0;height:1px;border-bottom:1px solid #212121}
 .navigation ul li a {font-size:22px;padding-left:20px}
+.navigation ul li:last-child:after, .navigation ul li:last-child {border:none !important}
 
+  
 .navigation ul li a span {padding-right:10px;}
 
 .content .loc li {border:none !important}
