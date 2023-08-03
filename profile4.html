@@ -30,6 +30,10 @@
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;700&display=swap" rel="stylesheet">
     </head>
     <body class="bg-grey profile profile-1mobile">
+        
+
+
+
         <header>
             <div class="container">
                 <div class="logo">
@@ -47,40 +51,82 @@
                             <a class="nav-link" data-translate="menu_contact" href="contact.html">Contact us</a>
                         </li>
                         <li>
-                            <select class="lang-select" id="lang">
+                            <select class="select" id="lang">
                                 <option>English</option>
                                 <option>Deutchland</option>
                                 <option>French</option>
                                 <option>Italian</option>
                                 <option>Spanish</option>
+                                <!-- 
+                                    Deutsche
+                                    Français
+                                    Italiano
+                                -->
                             </select>
                         </li>
                     </ul>
                 </nav>
 
-                <!-- MENU MOBILE -->
-                <div class="mobile-nav-button">
-                    <div class="mobile-nav-button__line"></div>
-                    <div class="mobile-nav-button__line"></div>
-                    <div class="mobile-nav-button__line"></div>
-                </div>
-                <nav class="mobile-menu">
+                <!-- mobile menu -->
+                <input type="checkbox" id="nav-control" class="nav-control">
+                <label for="nav-control" class="toggle-button">
+                    <div class="wolverine">
+                        <div class="claws"></div>
+                    </div>
+                </label>
+                <nav class="navigation">
                     <ul>
                         <li>
-                            <a class="nav-link" href="profiles.html">Home</a>
+                            <a class="nav-link" href="profiles.html">
+                                <span>
+                                    <img src="img/home-icon.svg" alt="home icon">
+                                </span> Home
+                            </a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#about-us">Locations</a>
+                            <div class="inner">
+                                <input type="checkbox" id="toggle" checked>
+                                <label for="toggle">
+                                    <span>
+                                        <img src="img/location-icon.svg" alt="home icon">
+                                    </span> Locations
+                                    <span class="open-location"></span>
+                                </label>
+                                <div class="content">
+                                    <a href="">Zurich</a>
+                                    <a href="">Berne</a>
+                                    <a href="">Vaud</a>
+                                    <a href="">St. Gallen</a>
+                                    <a href=""> Geneva</a>
+                                    <a href="">Lucerne</a>
+                                    <a href="">Valais</a>
+                                    <a href=""> Friburg</a>
+                                    <a href="">Basel Land</a>
+                                    <a href="">Solothurn</a>
+                                    <a href=""> Basel Stadt</a>
+                                    <a href="">Thurgau</a>
+                                    <a href="">Aargau</a>
+                                    <a href=""> Tessin</a>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <a class="nav-link" href="contact.html">Contact us</a>
+                            <a class="nav-link" href="#services">
+                                <span>
+                                    <img src="img/contact-icon.svg" alt="home icon">
+                                </span> Contact us
+                            </a>
                         </li>
                     </ul>
                 </nav>
-                <!-- MENU MOBILE ENDS -->
+                <!--menu mobile ends -->
 
             </div>
         </header>
+
+
+
+
         <main class="mt-20">
 
           <div class="bg-slider"></div>
@@ -95,12 +141,12 @@
                                     <a href="profiles.html">Home</a>
                                 </li>
                                 <li class="breadcrumb-item">
-                                    <a href="#">Canton</a>
+                                   <h2><a href="#">Canton</a></h2>
                                 </li>
                                 <li class="breadcrumb-item active" aria-current="page">Melissa Aniston</li>
                             </ol>
                         </nav>
-                        <h2>Melissa Aniston
+                        <h1>Melissa Aniston
                             <span>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +164,7 @@
                                     />
                                 </svg>
                             </span>
-                        </h2>
+                        </h1>
                     </div>
                 </div><!-- row end-->
 

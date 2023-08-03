@@ -11,7 +11,7 @@
         <link href="css/bootstrap4.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/menu.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
         <link
             rel="icon"
@@ -30,6 +30,7 @@
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;700&display=swap" rel="stylesheet">
     </head>
     <body class="contact">
+       
         <header>
             <div class="container">
                 <div class="logo">
@@ -47,43 +48,75 @@
                             <a class="nav-link" data-translate="menu_contact" href="contact.html">Contact us</a>
                         </li>
                         <li>
-                       
-                          
-                                <select id="lang">    
-                                    <option>English</option>
-                                    <option>Deutchland</option>
-                                    <option>French</option>
-                                    <option>Italian</option>
-                                    <option>Spanish</option>
-                                </select>
-                          
-
-
+                            <select class="select" id="lang">
+                                <option>English</option>
+                                <option>Deutchland</option>
+                                <option>French</option>
+                                <option>Italian</option>
+                                <option>Spanish</option>
+                                <!-- 
+                                    Deutsche
+                                    Français
+                                    Italiano
+                                -->
+                            </select>
                         </li>
-
                     </ul>
                 </nav>
 
-                <!-- MENU MOBILE -->
-                <div class="mobile-nav-button">
-                    <div class="mobile-nav-button__line"></div>
-                    <div class="mobile-nav-button__line"></div>
-                    <div class="mobile-nav-button__line"></div>
-                </div>
-                <nav class="mobile-menu">
+                <!-- mobile menu -->
+                <input type="checkbox" id="nav-control" class="nav-control">
+                <label for="nav-control" class="toggle-button">
+                    <div class="wolverine">
+                        <div class="claws"></div>
+                    </div>
+                </label>
+                <nav class="navigation">
                     <ul>
                         <li>
-                            <a class="nav-link" href="profiles.html">Home</a>
+                            <a class="nav-link" href="profiles.html">
+                                <span>
+                                    <img src="img/home-icon.svg" alt="home icon">
+                                </span> Home
+                            </a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#about-us">Locations</a>
+                            <div class="inner">
+                                <input type="checkbox" id="toggle" checked>
+                                <label for="toggle">
+                                    <span>
+                                        <img src="img/location-icon.svg" alt="home icon">
+                                    </span> Locations
+                                    <span class="open-location"></span>
+                                </label>
+                                <div class="content">
+                                    <a href="">Zurich</a>
+                                    <a href="">Berne</a>
+                                    <a href="">Vaud</a>
+                                    <a href="">St. Gallen</a>
+                                    <a href=""> Geneva</a>
+                                    <a href="">Lucerne</a>
+                                    <a href="">Valais</a>
+                                    <a href=""> Friburg</a>
+                                    <a href="">Basel Land</a>
+                                    <a href="">Solothurn</a>
+                                    <a href=""> Basel Stadt</a>
+                                    <a href="">Thurgau</a>
+                                    <a href="">Aargau</a>
+                                    <a href=""> Tessin</a>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <a class="nav-link" href="#services">Contact us</a>
+                            <a class="nav-link" href="#services">
+                                <span>
+                                    <img src="img/contact-icon.svg" alt="home icon">
+                                </span> Contact us
+                            </a>
                         </li>
                     </ul>
                 </nav>
-                <!-- MENU MOBILE ENDS -->
+                <!--menu mobile ends -->
 
             </div>
         </header>
@@ -103,12 +136,9 @@
                             </ol>
                         </nav>
                     </div>
-                </div>    
-
-
-<div class="form-cont">
-      
-                        <div class="pulse-box">
+                </div>
+                <div class="form-cont">
+                    <!--   <div class="pulse-box">
                             <div style="box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.50) inset;" class="circle">
                                 <svg class="checkmark success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
                                     <circle class="checkmark_circle_success" cx="26" cy="26" r="25" fill="none"/><path class="checkmark_check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" stroke-linecap="round"/></svg>
@@ -135,173 +165,243 @@
                              
                             </svg>
                             
-                          </div>
-                   
-                        <h1>Contact us</h1>
-                        <p>Any question or remarks? Just write us a message!</p>
-               
-                    
-                   
-
-
-
-
+                          </div>-->
+                    <h1>Contact us</h1>
+                    <p>Any question or remarks? Just write us a message!</p>
                     <form class="home-form">
                         <div class="row">
-
-                        <div class="col-md-6"> 
-                            <div class="custom-select">
-                                <select>
-                                      <option value="0">Select subject</option>
-                                      <option value="1">Support </option>
-                                      <option value="1">Advertising</option>
-                                     <option value="3">General</option>
-                                </select>
-                            </div> 
-                         </div>
-
-                        <div class="col-md-6"> 
-                            <input type="text"
-                            placeholder="* Name"
-                            required
-                            class="home-textinput input"/>
+                            <div class="col-md-6">
+                                <div class="custom-select">
+                                    <select class="select-form">
+                                        <option value="0">Select subject</option>
+                                        <option value="1">Support</option>
+                                        <option value="1">Advertising</option>
+                                        <option value="3">General</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input
+                                    type="text"
+                                    placeholder="* Name"
+                                    required
+                                    class="home-textinput input"
+                                >
+                            </div>
+                            <div class="col-md-6">
+                                <input
+                                    type="text"
+                                    placeholder="* Email"
+                                    required
+                                    class="home-textinput input"
+                                >
+                            </div>
+                            <div class="col-md-6">
+                                <input
+                                    type="text"
+                                    placeholder="* Phone"
+                                    required
+                                    class="home-textinput input"
+                                >
+                            </div>
                         </div>
-                   
-                           
-                 <div class="col-md-6">  
-                     <input type="text"
-                            placeholder="* Email"
-                            required
-                            class="home-textinput input" />
-                        </div>
-
-                        <div class="col-md-6">
-                            <input type="text"
-                            placeholder="* Phone"
-                            required
-                            class="home-textinput input" />
-                        </div>
-
-</div>
-                       
-
-
-                        <textarea
-                            placeholder="* Your message"
-                            class="home-textarea textarea"></textarea>
-                            <span class="required"><strong>*</strong> Required field</span>
-                      
-                               <button>Submit</button>
+                        <textarea placeholder="* Your message" class="home-textarea textarea"></textarea>
+                        <span class="required">
+                            <strong>*</strong> Required field
+                        </span>
+                        <button>Submit</button>
                     </form>
-
-
-               </div>
-        </div>
-    </main>
-
-    <footer>
-
-        <!--arrow -->
-        <div class="arrow-background">
-            <a href="#top" class="arrow-circle">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                >
-                    <path d="M24.5561 19.2973C25.148 18.7134 25.148 17.7667 24.5561 17.1828L17.1415 9.87486C15.9575 8.70798 14.0391 8.70844 12.8557 9.87589L5.4439 17.1881C4.85203 17.772 4.85203 18.7188 5.4439 19.3027C6.03579 19.8868 6.99541 19.8868 7.5873 19.3027L13.931 13.0442C14.523 12.4603 15.4825 12.4603 16.0744 13.0442L22.4128 19.2973C23.0046 19.8812 23.9643 19.8812 24.5561 19.2973Z" fill="white"/>
-                </svg>
-            </a>
-        </div>
-        <!--arrow ends -->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <div class="logo">
-                        <img alt="figgmi.ch" src="img/Figgmi-logo.svg">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!--arrow -->
+            <div class="arrow-background">
+                <a href="#top" class="arrow-circle">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                    >
+                        <path d="M24.5561 19.2973C25.148 18.7134 25.148 17.7667 24.5561 17.1828L17.1415 9.87486C15.9575 8.70798 14.0391 8.70844 12.8557 9.87589L5.4439 17.1881C4.85203 17.772 4.85203 18.7188 5.4439 19.3027C6.03579 19.8868 6.99541 19.8868 7.5873 19.3027L13.931 13.0442C14.523 12.4603 15.4825 12.4603 16.0744 13.0442L22.4128 19.2973C23.0046 19.8812 23.9643 19.8812 24.5561 19.2973Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            <!--arrow ends -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 logo-footer">
+                        <div class="logo">
+                            <img alt="figgmi.ch" src="img/Figgmi-logo.svg">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-2">
-                    <ul>
-                        <li>
-                            <a href="" data-translate="footer_report">Make a report</a>
-                        </li>
-
-                        <li>
-                            <a href="">T&Cs</a>
-                        </li>
-
-                        <li>
-                            <a href="">Cookies policy</a>
-                        </li>
-
-                        <li>
-                            <a href="">Privacy policy</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul>
-                        <li>
+                    <div class="col-md-2">
+                        <ul>
+                            <li>
+                                <a href="" data-translate="footer_report">Make a report</a>
+                            </li>
+                            <li>
+                                <a href="">T&Cs</a>
+                            </li>
+                            <li>
+                                <a href="">Cookies policy</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li>
                                 <a href="">DMCA</a>
                             </li>
-    
                             <li>
                                 <a href="">2257 Policy</a>
                             </li>
-    
                             <li>
                                 <a href="">Report Trafficking</a>
                             </li>
-    
                             <li>
                                 <a href="">Content Removal</a>
                             </li>
-                    </ul>
-                    
-                </div>
-
-                <div class="col-md-2">
-                    <ul>
-                        <li class="mb-4"><a href=""><img src="img/rta.png" alt="rta link"></a></li>
-                        <li><a href=""><img src="img/asa.png" alt="rta link"></a></li>
-                     
-                    </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <ul>
-                        <li class="mb-4"><a href=""><img src="img/dm.png" alt="rta link"></a></li>
-                        <li><a href=""><img src="img/unseen.png" alt="rta link"></a></li>
-                    </div>
-                    <div class="col-md-2">
-                        <ul>
-                            <li><a href=""><img src="img/eyes.png" alt="rta link"></a></li></ul>
                         </ul>
                     </div>
-
+                    <div class="col-md-2">
+                        <ul>
+                            <li class="mb-4">
+                                <a href="">
+                                    <img src="img/rta.png" alt="rta link">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/asa.png" alt="rta link">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li class="mb-4">
+                                <a href="">
+                                    <img src="img/dm.png" alt="rta link">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/unseen.png" alt="rta link">
+                                </a>
+                            </li>
+                        </div>
+                        <div class="col-md-2">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img class="human-traffic" src="img/eyes.png" alt="rta link">
+                                    </a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="copyrights border-gradient-red-top">
-            <div class="container">
-                <p>Copyright ©  2023</p>
-                <p> This website is operated by: European Media Limited, 7 Bell Yard, Westminster, London, WC2A 2JR,  United Kingdom.</p>
-                <p>All Rights Reserved.</p>
+            <div class="copyrights border-gradient-red-top">
+                <div class="container">
+                    <p>Copyright ©  2023</p>
+                    <p> This website is operated by: European Media Limited, 7 Bell Yard, Westminster, London, WC2A 2JR,  United Kingdom.</p>
+                    <p>All Rights Reserved.</p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+        <script src="js/jquery-3.6.4.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/menu.js"></script>
+        <script type="text/javascript" src="js/slick.js"></script>
+        <script type="text/javascript" src="js/languages.js"></script>
+        <script>
 
 
 
-    
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/bootstrap4.js"></script>
-    <script src="js/menu.js"></script>
-    <script type="text/javascript" src="js/slick.js"></script>
-    <script type="text/javascript" src="js/languages.js"></script>
 
-   
-</body>
+        var x, i, j, l, ll, selElmnt, a, b, c;
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByClassName("select-form")[0];
+  ll = selElmnt.length;
+
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByClassName("select-form")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+    e.stopPropagation();
+    closeAllSelect(this);
+    this.nextSibling.classList.toggle("select-hide");
+    this.classList.toggle("select-arrow-active");
+  });
+}
+
+function closeAllSelect(elmnt) {
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+
+document.addEventListener("click", closeAllSelect);
+        </script>
+    </body>
 </html>
+<!--
+Deutsche
+Français
+Italiano
+-->
