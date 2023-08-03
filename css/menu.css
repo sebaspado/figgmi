@@ -18,7 +18,7 @@
 }
 
 .navigation ul {display:flex;flex-direction: column;width: 100%;}  
-.navigation ul li {width:100%;padding: 20px 0 20px;border-bottom:1px solid #000000;}
+.navigation ul li {width:100%;display: flex;padding: 20px 0 20px 15px;border-bottom:1px solid #000000;}
 .navigation ul li:after {width:100%; position:absolute;content:"";bottom:0;height:1px;border-bottom:1px solid #212121}
 .navigation ul li a {font-size:22px;padding-left:20px}
 .navigation ul li:last-child:after, .navigation ul li:last-child {border:none !important}
@@ -141,13 +141,7 @@
 
 
 
-.inner {
-max-width: 100%;
-margin: 0;
-font-size: 20px;
-font-weight: 100;
-  padding-left:20px
-}
+.inner {max-width: 100%;margin: 0;font-size: 20px;font-weight: 100;padding-left:20px;width: 100%;/* display: flex; *//* flex-direction: column; */}
 .inner span {margin-right:10px}
 
 
@@ -173,16 +167,17 @@ input[type=checkbox]:checked ~ label ~ .content {
 
 .navigation .content {
   height: 250px;
-    padding: 16px;
+  padding: 16px 0;
   display: block;
   clear: both;
   overflow: hidden;
   overflow-y: auto;
-  width: 100%;
+  width: 96% !important;
   display: flex;
-  flex-direction: column;}
+  flex-direction: column;
+  }
 
-.navigation .content a {margin-bottom:20px;font-size:18px;}
+.navigation .content a {margin-bottom:20px;font-size:18px;padding: 0;}
 
 
 .fixed-position {
