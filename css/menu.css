@@ -1,5 +1,6 @@
 .toggle-button, .navigation, .nav-control {display: none;position:absolute;}
-
+.position-fixed-body {position: fixed;
+  background: #2f2f2f !important;}
 @media(max-width:768px){
 .navigation {
   position: absolute;
@@ -182,3 +183,16 @@ input[type=checkbox]:checked ~ label ~ .content {
   flex-direction: column;}
 
 .navigation .content a {margin-bottom:20px;font-size:18px;}
+
+
+.fixed-position {
+  position: fixed;
+}
+
+
+
+
+
+
+
+

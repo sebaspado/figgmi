@@ -1,7 +1,5 @@
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
+$(".nav-control").click(function(){
+  $("body").toggleClass("position-fixed-body");
+});
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+
