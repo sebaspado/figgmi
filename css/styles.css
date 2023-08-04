@@ -519,7 +519,7 @@ textarea:focus {border:1px solid #666}
   padding: 0px;
   height: 212px;
   margin: 0 10px 20px;
-  width: 100%;
+  width: calc(33.3333% - 20px);
   text-decoration: none;
 }
 
@@ -1389,6 +1389,9 @@ svg.pulse-svg-error .third-circle {
 
 
 @media (max-width: 1024px) {
+
+.card-view-1 {width:100%}
+  
   .bg-slider {
       display: none;
   }
