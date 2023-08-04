@@ -14,6 +14,17 @@ $(function () {
         "report_profile": "Report this profile",
         "disclaimer": "Important notice - Please be careful if an escort asks you to pay in advance.Figgmi.ch does NOT take responsibility for fraud or scams.",
 
+        "contact_name": "Name *",
+        "contact_email": "Email *",
+        "contact_phone": "Phone *",
+        "contact_message": "Message *",
+        "required_field": "* Required field",
+        "contact_submit": "Send",
+
+        "welcome_popup": "This website is an adult website. If you want to visit the site, please confirm that you are at least 18 years old.",
+
+        
+
           "footer_report": "Make a report",
           "_january": "January"
       },
@@ -25,7 +36,15 @@ $(function () {
 
         "call_me_now": "Anrufen",
         "report_profile": "Dieses Profil melden",
-        "disclaimer": "",
+        "contact_name": "Name *",
+        "contact_email": "E-mail *",
+        "contact_phone": "Telefon *",
+        "contact_message": "Nachricht *",
+        "required_field": "* Pflichtfeld",
+        "contact_submit": "Absenden",
+
+        "welcome_popup":"Diese Website ist für ein erwachsenes Publikum bestimmt. Wenn du die Seite besuchen möchtest, bestätige bitte, dass du mindestens 18 Jahre alt bist.",
+        
 
           "footer_report": "deuch",
           "_january": "Janeiro"
@@ -34,6 +53,15 @@ $(function () {
         "menu_home": "Accueil",
         "menu_locations": "Cantons",
         "menu_contact": "Contactez-nous",
+
+        "contact_name": "Nom *",
+        "contact_email": "E-mail *",
+        "contact_phone": "Téléphone *",
+        "contact_message": "Message *",
+        "required_field": "* Champs obligatoire",
+        "contact_submit": "Envoyer",
+        
+        "welcome_popup":"Ce site est destiné à un public adulte. Si tu souhaites visiter le site, confirme que tu as au moins 18 ans.",
 
         "call_me_now": "Appelle-moi",
         "report_profile": "Signaler le profil",
@@ -46,6 +74,15 @@ $(function () {
         "menu_home": "Inizio",
         "menu_locations": "Cantoni",
         "menu_contact": "Contact us",
+
+        "contact_name": "Nome *",
+        "contact_email": "E-mail *",
+        "contact_phone": "Telefono *",
+        "contact_message": "Messaggio *",
+        "required_field": "* Campo obbligatorio",
+        "contact_submit": "Invia",
+
+        "welcome_popup":"Questo sito web è destinato ad un pubblico adulto. Se desiderate visitare il sito, confermate di avere almeno 18 anni.",
 
         "call_me_now": "Chiamami ",
         "report_profile": "Segnala questo profilo",

@@ -15,6 +15,7 @@
   flex-direction: column;
   background: rgb(0 0 0 / 90%);
   backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
 }
 
 .navigation ul {display:flex;flex-direction: column;width: 100%;}  

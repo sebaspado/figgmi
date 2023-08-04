@@ -194,8 +194,9 @@
                             </div>
                             <div class="col-md-6">
                                 <input
+                                data-translate="contact_name" 
                                     type="text"
-                                    placeholder="* Name"
+                                    placeholder="Name *"
                                     required
                                     class="home-textinput input"
                                 >
@@ -203,6 +204,7 @@
                             <div class="col-md-6">
                                 <input
                                     type="text"
+                                    data-translate="contact_email" 
                                     placeholder="Email "
                                     required
                                     class="home-textinput input error"
@@ -212,17 +214,18 @@
                             <div class="col-md-6">
                                 <input
                                     type="text"
-                                    placeholder="* Phone"
+                                    data-translate="contact_phone" 
+                                    placeholder="Phone *"
                                     required
                                     class="home-textinput input"
                                 >
                             </div>
                         </div>
-                        <textarea placeholder="* Your message" class="home-textarea textarea"></textarea>
-                        <span class="required">
+                        <textarea  data-translate="contact_message"  placeholder="Your message *" class="home-textarea textarea"></textarea>
+                        <span class="required"  data-translate="required_field">
                             <strong>*</strong> Required field
                         </span>
-                        <button>Submit</button>
+                        <button data-translate="contact_submit">Submit</button>
                     </form>
                 </div>
             </div>

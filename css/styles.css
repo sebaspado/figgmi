@@ -1491,11 +1491,12 @@ footer .copyrights {padding:0 20px}
 }
   .modal-dialog {
       min-height: calc(100vh - 20px);
+      margin: 10px 0;
   }
 
   .profile  .modal-content {
       width: 90%;
-      top: 15%;
+      top: 10%;
   }
 
   
