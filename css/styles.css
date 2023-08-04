@@ -482,18 +482,14 @@ form {
   text-align: center;
 }
 
-form input, form select {border-radius: 4px;border-radius: 4px;
-border: 1px solid #1C1B1B;
-background: #242424;height: 50px;padding: 12px 20px 12px 12px;color: rgb(255, 255, 255);width: 100%;margin-bottom: 20px;position:relative;}
+form input, form select {border-radius: 4px;border-radius: 4px;border: 1px solid #1C1B1B;background: #242424;height: 50px;padding: 12px 20px 12px 12px;color: rgb(255, 255, 255);width: 100%;margin-bottom: 20px;position:relative;font-size: 16px;font-weight: 100;}
 form input.error {border-radius: 4px;
 border: 1px solid #6A1716;
 background: #270D0D;}
 
-span.error {position:absolute;width:150px;right:20px;top:15px;font-size:14px;color: #FF7271;}
+span.error {position:absolute;width: 180px;right:20px;top:15px;font-size:14px;color: #FF7271;}
 
-textarea {border-radius: 4px;border-radius: 4px;
-border: 1px solid #1C1B1B;
-background: #242424;width:100%;height:138px;padding: 12px;color: #fff;}
+textarea {border-radius: 4px;border-radius: 4px;border: 1px solid #1C1B1B;background: #242424;width:100%;height:138px;padding: 12px;color: #fff;font-weight: 100;}
 textarea:focus {border:1px solid #666}
 
 .home-form button {
@@ -1461,7 +1457,7 @@ footer img {width:80%}
                         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='8' viewBox='0 0 15 8' fill='none'%3E%3Cpath d='M0.330558 0.330265C-0.110262 0.765164 -0.110262 1.47036 0.330557 1.90525L5.85317 7.34838C6.73503 8.21751 8.16394 8.21716 9.04536 7.34761L14.5659 1.90125C15.0067 1.46635 15.0067 0.761156 14.5659 0.326257C14.125 -0.108752 13.4103 -0.108752 12.9694 0.326257L8.24443 4.98774C7.8035 5.42264 7.08882 5.42264 6.648 4.98774L1.92699 0.330265C1.48617 -0.104633 0.771377 -0.104633 0.330558 0.330265Z' fill='white'/%3E%3C/svg%3E");
    }
   .select-options li {border:none !important;}
-  span.error {right:0}
+  span.error {right: 3%;}
  .custom-select {margin-bottom: 16px !important;} 
 .form-cont {width:100%}
 .row.no-padding-mobile {padding: 0 0 0 15px !important;}
@@ -1642,5 +1638,129 @@ footer .copyrights {padding:0 20px}
 
   .card-view-1 .info-card .category {
       font-size: 11px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.select-box {
+  position: relative;
+  display: block;
+  z-index: 999;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
+}
+
+@media (min-width: 769px) {
+  .select-box {
+    width: 100%;
+    font-size:16px; font-weight:100;
+  }
+}
+
+.select-box__current {
+  position: relative;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+}
+.select-box__current:focus + .select-box__list {
+  opacity: 1;
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+.select-box__current:focus + .select-box__list .select-box__option {
+  cursor: pointer;
+}
+.select-box__current:focus .select-box__icon {
+  transform: translateY(-50%) rotate(180deg);
+}
+.select-box__icon {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 20px;
+  opacity: 0.3;
+  transition: 0.2s ease;
+  clip-path: inherit;
+  filter: invert(1);
+  opacity: 1;
+}
+.select-box__value {
+  display: flex;
+}
+.select-box__input {
+  display: none;
+}
+.select-box__input:checked + .select-box__input-text {
+  display: block;
+}
+.select-box__input-text {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 12px;
+  background-color: #242424;
+  border-radius: 4px;
+  height: 48px;
+  border: 1px solid #1C1B1B;
+  margin-bottom: 16px;
+  font-weight: 100;
+}
+.select-box__list {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  -webkit-animation-name: HideList;
+          animation-name: HideList;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: step-start;
+          animation-timing-function: step-start;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+}
+.select-box__option {
+  display: block;
+  padding: 12px;
+  background-color: #181818;
+  border-radius:4px;
+}
+.select-box__option:hover, .select-box__option:focus {
+  color: #546c84;
+  background-color: #fbfbfb;
+}
+
+@-webkit-keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
   }
 }

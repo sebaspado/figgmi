@@ -178,19 +178,58 @@
                             </svg>
                             
                           </div>-->
-                    <h1>Contact us</h1>
-                    <p>Any question or remarks? Just write us a message!</p>
+                    <h1 data-translate="contact_h1">Contact us</h1>
+                    <p data-translate="contact_p">Any question or remarks? Just write us a message!</p>
                     <form class="home-form">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="custom-select">
+                               <!-- <div class="custom-select">
                                     <select class="select-form">
-                                        <option value="0">Select subject</option>
-                                        <option value="1">Support</option>
-                                        <option value="1">Advertising</option>
-                                        <option value="3">General</option>
+                                        <option value="0"><p data-translate="contact_subject">Select subject</p></option>
+                                        <option data-translate="contact_support" value="1">Support</option>
+                                        <option data-translate="contact_advertising" value="1">Advertising</option>
+                                        <option data-translate="contact_general" value="3">General</option>
                                     </select>
-                                </div>
+                                </div>-->
+
+
+
+                                <div class="select-box">
+                                    <div class="select-box__current" tabindex="1">
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
+                                        <span data-translate="contact_subject" class="select-box__input-text">Select subject</span>
+                                      </div>
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="1" value="2" name="Ben"/>
+                                        <span class="select-box__input-text" data-translate="contact_support">Support</span>
+                                      </div>
+                                     
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="2" value="3" name="Ben"/>
+                                        <span class="select-box__input-text" data-translate="contact_advertising">Advertising</span>
+                                      </div>
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="3" value="4" name="Ben"/>
+                                        <span class="select-box__input-text" data-translate="contact_general">General</span>
+                                      </div>
+                                    <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                                    </div>
+                                    <ul class="select-box__list">
+                                      <li>
+                                        <label class="select-box__option" for="0" data-translate="contact_support" aria-hidden="aria-hidden">Support </label>
+                                      </li>
+                                      <li>
+                                        <label class="select-box__option" for="1" aria-hidden="aria-hidden" data-translate="contact_advertising"> Advertising</label>
+                                      </li>
+                                      <li>
+                                        <label class="select-box__option" for="2" aria-hidden="aria-hidden" data-translate="contact_general"> General</label>
+                                      </li>
+                                
+                                    </ul>
+                                  </div>
+
+
                             </div>
                             <div class="col-md-6">
                                 <input
@@ -209,7 +248,7 @@
                                     required
                                     class="home-textinput input error"
                                 >
-                                <span class="error">This field is required</span>
+                                <span class="error" data-translate="required_field_span">This field is required</span>
                             </div>
                             <div class="col-md-6">
                                 <input
@@ -337,83 +376,6 @@
         <script src="js/menu.js"></script>
         <script type="text/javascript" src="js/slick.js"></script>
         <script type="text/javascript" src="js/languages.js"></script>
-        <script>
-
-
-
-
-        var x, i, j, l, ll, selElmnt, a, b, c;
-x = document.getElementsByClassName("custom-select");
-l = x.length;
-for (i = 0; i < l; i++) {
-  selElmnt = x[i].getElementsByClassName("select-form")[0];
-  ll = selElmnt.length;
-
-  a = document.createElement("DIV");
-  a.setAttribute("class", "select-selected");
-  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-  x[i].appendChild(a);
-
-  b = document.createElement("DIV");
-  b.setAttribute("class", "select-items select-hide");
-  for (j = 1; j < ll; j++) {
-
-    c = document.createElement("DIV");
-    c.innerHTML = selElmnt.options[j].innerHTML;
-    c.addEventListener("click", function(e) {
-
-        var y, i, k, s, h, sl, yl;
-        s = this.parentNode.parentNode.getElementsByClassName("select-form")[0];
-        sl = s.length;
-        h = this.parentNode.previousSibling;
-        for (i = 0; i < sl; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
-            h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            yl = y.length;
-            for (k = 0; k < yl; k++) {
-              y[k].removeAttribute("class");
-            }
-            this.setAttribute("class", "same-as-selected");
-            break;
-          }
-        }
-        h.click();
-    });
-    b.appendChild(c);
-  }
-  x[i].appendChild(b);
-  a.addEventListener("click", function(e) {
-    e.stopPropagation();
-    closeAllSelect(this);
-    this.nextSibling.classList.toggle("select-hide");
-    this.classList.toggle("select-arrow-active");
-  });
-}
-
-function closeAllSelect(elmnt) {
-  var x, y, i, xl, yl, arrNo = [];
-  x = document.getElementsByClassName("select-items");
-  y = document.getElementsByClassName("select-selected");
-  xl = x.length;
-  yl = y.length;
-  for (i = 0; i < yl; i++) {
-    if (elmnt == y[i]) {
-      arrNo.push(i)
-    } else {
-      y[i].classList.remove("select-arrow-active");
-    }
-  }
-  for (i = 0; i < xl; i++) {
-    if (arrNo.indexOf(i)) {
-      x[i].classList.add("select-hide");
-    }
-  }
-}
-
-document.addEventListener("click", closeAllSelect);
-        </script>
     </body>
 </html>
 <!--

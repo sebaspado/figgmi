@@ -18,8 +18,12 @@ $(function () {
         "contact_email": "Email *",
         "contact_phone": "Phone *",
         "contact_message": "Message *",
+        "required_field_span": "This field is required",
         "required_field": "* Required field",
         "contact_submit": "Send",
+        "contact_subject": "Select subject",
+        "contact_h1": "Contact us",
+        "contact_p": "Any question or remarks? Just write us a message!",
 
         "welcome_popup": "This website is an adult website. If you want to visit the site, please confirm that you are at least 18 years old.",
 
@@ -42,11 +46,19 @@ $(function () {
         "contact_message": "Nachricht *",
         "required_field": "* Pflichtfeld",
         "contact_submit": "Absenden",
+        "required_field_span": " Dieses Feld ist erforderlich",
+        "contact_subject": "Betreff auswählen",
+        "contact_support": "Unterstützung",
+        "contact_advertising": "Werbung",
+        "contact_general": "Allgemein",
+        "contact_h1": "kontaktiere uns",
+        "contact_p": "Haben Sie Fragen oder Anmerkungen? Schreiben Sie uns einfach eine Nachricht!",
+       
 
         "welcome_popup":"Diese Website ist für ein erwachsenes Publikum bestimmt. Wenn du die Seite besuchen möchtest, bestätige bitte, dass du mindestens 18 Jahre alt bist.",
         
 
-          "footer_report": "deuch",
+          "footer_report": "Make a report",
           "_january": "Janeiro"
       },
       "french": {
@@ -59,7 +71,15 @@ $(function () {
         "contact_phone": "Téléphone *",
         "contact_message": "Message *",
         "required_field": "* Champs obligatoire",
+        "contact_subject": "Envoyer",
         "contact_submit": "Envoyer",
+        "required_field_span": "Ce champ est obligatoire",
+        "contact_subject": "Sélectionnez le sujet",
+        "contact_support": "Soutien",
+        "contact_advertising": "Publicité",
+        "contact_general": "Général",
+        "contact_h1": "Contactez-nous",
+        "contact_p": "Une question ou une remarque ? Écrivez-nous simplement un message!",
         
         "welcome_popup":"Ce site est destiné à un public adulte. Si tu souhaites visiter le site, confirme que tu as au moins 18 ans.",
 
@@ -81,7 +101,14 @@ $(function () {
         "contact_message": "Messaggio *",
         "required_field": "* Campo obbligatorio",
         "contact_submit": "Invia",
-
+        "required_field_span": "Questo campo è obbligatorio",
+        "contact_subject": "Seleziona oggetto",
+        "contact_support": "Supporto",
+        "contact_advertising": "Pubblicità",
+        "contact_general": "Generale",
+        "contact_h1": "Contattaci",
+        "contact_p": "Qualche domanda o commento? Scrivici un messaggio!",
+        
         "welcome_popup":"Questo sito web è destinato ad un pubblico adulto. Se desiderate visitare il sito, confermate di avere almeno 18 anni.",
 
         "call_me_now": "Chiamami ",
@@ -90,20 +117,6 @@ $(function () {
 
 
         "footer_report": "ital",
-        "_january": "январь"
-    },
-    "spanish": {
-        "menu_home": "Inicio",
-        "menu_locations": "Cantones",
-        "menu_contact": "Contact us",
-
-        "call_me_now": "Llámame",
-        "report_profile": "Denunciar este perfil",
-        "disclaimer": "Aviso importante - Por favor, tenga cuidado si una escort le pide que pague por adelantado. Figgmi.ch NO se hace responsable de fraudes o estafas.",
-
-        "age_verification": "Contact us",
-
-        "footer_report": "spanish",
         "_january": "январь"
     }
   };
@@ -126,7 +139,7 @@ $(function () {
   });
 
   // Set inicial que arranque in innnnnglish
-  set_lang(dictionary.english);
+  set_lang(dictionary.deutchland);
 
 });
 
