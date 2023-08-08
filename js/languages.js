@@ -138,7 +138,7 @@ $(function () {
       }
   });
 
-  // Set inicial que arranque in innnnnglish
+  // Set inicial que arranque in aleman
   set_lang(dictionary.deutchland);
 
 });

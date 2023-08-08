@@ -7,3 +7,9 @@ $("#toggle").click(function(){
 });
 
 
+$(".sub").click(function(){
+  $(".subMenu-locations").toggleClass("show");
+  $(".open-subMenu").toggleClass("up");
+
+});
+

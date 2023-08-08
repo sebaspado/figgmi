@@ -168,7 +168,7 @@ header nav {
 
 header nav ul {
   display: flex;
-  width: 360px;
+  width: 420px;
   margin: 0px;
   padding: 0px;
   justify-content: space-between;
@@ -191,6 +191,7 @@ header nav ul li a, header nav .nav-link, header nav .nav-link:hover {
   position: relative;
   font-weight: 100;
   color: rgb(255, 255, 255) !important;
+  font-size: 18px;
 }
 
 header nav li a.active {
@@ -236,6 +237,51 @@ header nav ul li a:hover::before {
   background: rgb(255, 71, 69);
   transition: width 0.35s ease 0s;
 }
+
+header li.locations-li {position:relative;width: 72px;}
+
+header .subMenu-locations {display: none;}
+header .subMenu-locations.show {
+                               display: block;
+                               width: 300px;
+                               /* height:150px; */
+                               position:absolute;
+                               top: 52px;
+                               /* background:#000; */
+                               /* display:flex; */
+                               /* flex-direction: column; */
+                               padding: 8px 0 20px 20px;
+                               z-index: 999;
+                               background: linear-gradient(90deg, rgb(24 24 24) 0%, rgb(0 0 0) 100%);
+                               }
+
+header .subMenu-locations.show a {width: 49%;display: inline-block;padding: 10px 0;}
+header .subMenu-locations.show a:hover::before{display:none}
+header .subMenu-locations.show a:hover {color:rgb(255, 181, 84) !important;}
+header .open-subMenu {
+                     width: 13px;
+                     height: 8px;
+                     top: 10px;
+                     /* bottom: 0; */
+                     margin: auto 0;
+                     position: absolute;
+                     right: -7px;
+                     transform: rotate(0);
+                     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='8' viewBox='0 0 13 8' fill='none'%3E%3Cpath d='M0.386305 0.598942C0.0045671 0.975552 0.00456704 1.58623 0.386305 1.96284L5.16873 6.67644C5.9324 7.42908 7.1698 7.42878 7.93308 6.67577L12.7137 1.95937C13.0954 1.58276 13.0954 0.972081 12.7137 0.595471C12.3319 0.218764 11.713 0.218764 11.3312 0.59547L7.2395 4.63219C6.85767 5.0088 6.23877 5.0088 5.85703 4.63219L1.76877 0.598942C1.38703 0.222331 0.768043 0.222331 0.386305 0.598942Z' fill='white'/%3E%3C/svg%3E");
+                     }
+header .open-subMenu.up {
+                        width: 13px;
+                        height: 8px;
+                        top: 9px;
+                        /* bottom: 0; */
+                        margin: auto 0;
+                        position: absolute;
+                        right: -7px;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='8' viewBox='0 0 13 8' fill='none'%3E%3Cpath d='M0.386305 0.598942C0.0045671 0.975552 0.00456704 1.58623 0.386305 1.96284L5.16873 6.67644C5.9324 7.42908 7.1698 7.42878 7.93308 6.67577L12.7137 1.95937C13.0954 1.58276 13.0954 0.972081 12.7137 0.595471C12.3319 0.218764 11.713 0.218764 11.3312 0.59547L7.2395 4.63219C6.85767 5.0088 6.23877 5.0088 5.85703 4.63219L1.76877 0.598942C1.38703 0.222331 0.768043 0.222331 0.386305 0.598942Z' fill='white'/%3E%3C/svg%3E");
+                        transform: rotate(180deg) !important;
+                        }
+
+
 
 .locations {
   height: 200px;
@@ -1331,7 +1377,7 @@ svg.pulse-svg-error .third-circle {
   /* border: 7px solid transparent; */
   /* border-color: #fff transparent transparent transparent; */
   position: absolute;
-  top: 14px;
+  top: 15px;
   right: 0;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='8' viewBox='0 0 13 8' fill='none'%3E%3Cpath d='M0.386305 0.598942C0.0045671 0.975552 0.00456704 1.58623 0.386305 1.96284L5.16873 6.67644C5.9324 7.42908 7.1698 7.42878 7.93308 6.67577L12.7137 1.95937C13.0954 1.58276 13.0954 0.972081 12.7137 0.595471C12.3319 0.218764 11.713 0.218764 11.3312 0.59547L7.2395 4.63219C6.85767 5.0088 6.23877 5.0088 5.85703 4.63219L1.76877 0.598942C1.38703 0.222331 0.768043 0.222331 0.386305 0.598942Z' fill='white'/%3E%3C/svg%3E");
 }
@@ -1746,8 +1792,8 @@ footer .copyrights {padding:0 20px}
   border-radius:4px;
 }
 .select-box__option:hover, .select-box__option:focus {
-  color: #546c84;
-  background-color: #fbfbfb;
+  color: #fff;
+  background-color: #0f0f0f;
 }
 
 @-webkit-keyframes HideList {
