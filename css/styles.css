@@ -204,6 +204,7 @@ header .logo {
   width: 150px;
   position: relative;
   z-index: 99999;
+  background: #121212;
 }
 
 header nav {
@@ -1865,7 +1866,3 @@ footer .copyrights {padding:0 20px}
     transform: scaleY(0);
   }
 }
-
-
-
-
