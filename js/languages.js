@@ -32,7 +32,7 @@ $(function () {
           "footer_report": "Make a report",
           "_january": "January"
       },
-      "deutchland": {
+      "deutsche": {
         "menu_home": "Home",
         "menu_locations": "Kantons",
         "menu_contact": "Contact us",
@@ -61,7 +61,7 @@ $(function () {
           "footer_report": "Make a report",
           "_january": "Janeiro"
       },
-      "french": {
+      "français": {
         "menu_home": "Accueil",
         "menu_locations": "Cantons",
         "menu_contact": "Contactez-nous",
@@ -90,7 +90,7 @@ $(function () {
           "footer_report": "french",
           "_january": "январь"
       },
-      "italian": {
+      "italiano": {
         "menu_home": "Inizio",
         "menu_locations": "Cantoni",
         "menu_contact": "Contact us",
@@ -139,7 +139,7 @@ $(function () {
   });
 
   // Set inicial que arranque in aleman
-  set_lang(dictionary.deutchland);
+  set_lang(dictionary.deutsche);
 
 });
 
