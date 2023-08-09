@@ -18,6 +18,7 @@ $(window).scroll(function() {
   if (scroll >= 90) {
       $(".toggle-button").addClass("static");
   }
+  else {
+    $(".toggle-button").removeClass("static");
+  };
 });
-
-
