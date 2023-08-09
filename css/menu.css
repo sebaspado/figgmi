@@ -3,6 +3,8 @@
   position: absolute;
 }
 
+.static {position:static !important}
+
 .position-fixed-body {
   position: fixed;
   background: rgb(47, 47, 47) !important;

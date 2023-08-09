@@ -13,4 +13,11 @@ $(".sub").click(function(){
 
 });
 
+$(window).scroll(function() {    
+  var scroll = $(window).scrollTop();
+  if (scroll >= 90) {
+      $(".toggle-button").addClass("static");
+  }
+});
+
 
