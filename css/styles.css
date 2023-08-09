@@ -290,7 +290,7 @@ header .subMenu-locations.show {
                                width: 300px;
                                /* height:150px; */
                                position:absolute;
-                               top: 52px;
+                               top: 54px;
                                /* background:#000; */
                                /* display:flex; */
                                /* flex-direction: column; */
@@ -567,11 +567,8 @@ h2 {
 .form-cont {width:700px; margin:auto;text-align:center}
 
 
-form {
-  margin: 15px auto;
-  text-align: center;
-}
-
+form {margin: 15px auto;text-align: center;}
+form .col-md-6 {position:relative;}
 form input, form select {border-radius: 4px;border-radius: 4px;border: 1px solid #1C1B1B;background: #242424;height: 50px;padding: 12px 20px 12px 12px;color: rgb(255, 255, 255);width: 100%;margin-bottom: 20px;position:relative;font-size: 16px;font-weight: 100;}
 form input.error {border-radius: 4px;
 border: 1px solid #6A1716;
@@ -864,7 +861,7 @@ textarea:focus {border:1px solid #666}
 
 .profile h1 {font-size:18px;}
 .profile h1 span {display:none}
-.profile h2 {font-size:18px;display:inline;font-weight: 400;}
+.profile h2 {font-size:18px;display: inline-block;font-weight: 400;margin: 0 0 0 5px;}
 
 .profile .location {margin-bottom:20px;}
 
@@ -1444,32 +1441,33 @@ svg.pulse-svg-error .third-circle {
   right: 0;
   /* left: 0; */
   z-index: 999;
-  margin: 24px 0px;
+  margin: 25px 0px;
   padding: 0 !important;
   width: 140px;
   list-style: none;
-  background: linear-gradient(90deg, rgb(218, 35, 33) 0%, rgb(155, 19, 17) 100%);
+  background: linear-gradient(90deg, rgb(24 24 24) 0%, rgb(1 1 1) 100%);
 }
 .select-options li {
   margin: 0;
   padding: 12px 0 !important;
   text-indent: 15px;
   font-weight: 100;
-  border-top: 1px solid #4d0605;
+  border-top: 1px solid #252525;
   -moz-transition: all 0.15s ease-in;
   -o-transition: all 0.15s ease-in;
   -webkit-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
 }
 
+.select-options li:first-child {border:none} 
 
 .select-options li.is-selected {
-  font-weight: bold;
+  font-weight: 500;
   color: rgb(255, 181, 84);
-  background: #620403;
+  background: #1e1e1e;
 }
 
-.select-options li:hover {background:#d1201e}
+.select-options li:hover {background:#0e0e0e}
 
 .select-options li[rel="hide"] {
   display: none;
