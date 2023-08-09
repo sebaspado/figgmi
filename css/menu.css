@@ -3,7 +3,7 @@
   position: absolute;
 }
 
-.static {position:static !important}
+.static {position:static !important;margin-right: -12px;}
 
 .position-fixed-body {
   position: fixed;

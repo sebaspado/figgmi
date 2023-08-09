@@ -57,7 +57,7 @@ $(function () {
         //home seo texts
         "h1_home":"Sex und Erotik Inserate in der Schweiz",
         "p1_home":"Willkommen bei figgmi.ch, deiner Adresse für prickelnde Momente. Du suchst Spaß und Abenteuer? Du bist am richtigen Ort!",
-        
+      
         "h2_home1":"Das TOP Sex & Erotik Inserate Plattform in der Schweiz",
         "p2_home":"Ob in Zürich, Genf, Basel oder anderswo – bei uns findest du, was dein Herz begehrt. Auf figgmi.ch sind heiße Sextreffen nur einen Klick entfernt.",
         
@@ -76,14 +76,8 @@ $(function () {
         "h2_home6":"Komm, sei dabei!",
         "p7_home":"Worauf wartest du? Entdecke die besten Sexinserate und Kontakte auf figgmi.ch. Die sinnlichste Begegnung deines Lebens könnte nur wenige Klicks entfernt sein.",
         
-
-
-
-
-
         "welcome_popup":"Diese Website ist für ein erwachsenes Publikum bestimmt. Wenn du die Seite besuchen möchtest, bestätige bitte, dass du mindestens 18 Jahre alt bist.",
         
-
           "footer_report": "Make a report",
           "_january": "Janeiro"
       },
@@ -130,9 +124,6 @@ $(function () {
         "h2_home6":"Viens, rejoins-nous !",
         "p6_home":"Qu'attends-tu ? Découvre les meilleures annonces d'escortes et services érotiques sur figgmi.ch. L'expérience la plus sensuelle de ta vie pourrait être à quelques clics.",
 
-
-
-
         "welcome_popup":"Ce site est destiné à un public adulte. Si tu souhaites visiter le site, confirme que tu as au moins 18 ans.",
 
         "call_me_now": "Appelle-moi",
@@ -170,9 +161,6 @@ $(function () {
         "h2_home6":"Vieni, unisciti a noi!",
         "p6_home":"Cosa stai aspettando? Scopri i migliori annunci di escort e servizi erotici su figgmi.ch. L'esperienza più sensuale della tua vita potrebbe essere a pochi clic di distanza.",
 
-
-
-
         "contact_name": "Nome *",
         "contact_email": "E-mail *",
         "contact_phone": "Telefono *",
@@ -192,7 +180,6 @@ $(function () {
         "call_me_now": "Chiamami ",
         "report_profile": "Segnala questo profilo",
         "disclaimer": "Avviso importante - Vi preghiamo di fare attenzione se una escort vi chiede di pagare in anticipo. Figgmi.ch NON si assume la responsabilità di frodi o truffe.",
-
 
         "footer_report": "ital",
         "_january": "январь"
@@ -218,7 +205,6 @@ $(function () {
 
   // Set inicial que arranque in aleman
   set_lang(dictionary.deutsche);
-
 });
 
 
@@ -265,7 +251,7 @@ $('.select').each(function(){
     $list.find('li.is-selected').removeClass('is-selected');
     $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
       $list.hide();
-      //console.log($this.val());
+      console.log($this.val());
   });
 
   $(document).click(function() {

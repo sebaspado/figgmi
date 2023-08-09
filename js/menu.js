@@ -10,15 +10,15 @@ $("#toggle").click(function(){
 $(".sub").click(function(){
   $(".subMenu-locations").toggleClass("show");
   $(".open-subMenu").toggleClass("up");
-
 });
 
 $(window).scroll(function() {    
   var scroll = $(window).scrollTop();
-  if (scroll >= 90) {
+  if (scroll >= 1) {
       $(".toggle-button").addClass("static");
   }
-  else {
+  else 
+  {
     $(".toggle-button").removeClass("static");
   };
 });
