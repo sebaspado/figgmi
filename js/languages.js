@@ -54,6 +54,32 @@ $(function () {
         "contact_h1": "kontaktiere uns",
         "contact_p": "Haben Sie Fragen oder Anmerkungen? Schreiben Sie uns einfach eine Nachricht!",
        
+        //home seo texts
+        "h1_home":"Sex und Erotik Inserate in der Schweiz",
+        "p1_home":"Willkommen bei figgmi.ch, deiner Adresse für prickelnde Momente. Du suchst Spaß und Abenteuer? Du bist am richtigen Ort!",
+        
+        "h2_home1":"Das TOP Sex & Erotik Inserate Plattform in der Schweiz",
+        "p2_home":"Ob in Zürich, Genf, Basel oder anderswo – bei uns findest du, was dein Herz begehrt. Auf figgmi.ch sind heiße Sextreffen nur einen Klick entfernt.",
+        
+        "h2_home2":"Sextreffen in der Schweiz leicht gemacht",
+        "p3_home":"Schnell, einfach, unkompliziert. Echte Kontakte in deiner Nähe. Die besten Sexinserate der Schweiz findest du bei uns. Registriere dich jetzt und entdecke ein neues Level der Erotik.",
+        
+        "h2_home3":"Für jeden etwas dabei",
+        "p4_home":"Von sinnlichen Massagen bis hin zu aufregenden Treffen mit Privatpersonen – bei figgmi.ch ist für jeden Geschmack etwas dabei. Unsere Plattform ist sicher und diskret. Probier es gleich aus!",
+        
+        "h2_home4":"Dein Vertrauen ist uns wichtig",
+        "p5_home":"Bei figgmi.ch legen wir großen Wert auf Privatsphäre und Diskretion. Deine Daten sind bei uns sicher. Denn dein Vertrauen ist unser oberstes Gebot.",
+        
+        "h2_home5":"Leicht zu nutzen, schwer zu vergessen",
+        "p6_home":"Suchen, finden, genießen. Mit unserer benutzerfreundlichen Oberfläche ist es kinderleicht, das zu finden, wonach du suchst. Einmal figgmi.ch – immer figgmi.ch.",
+        
+        "h2_home6":"Komm, sei dabei!",
+        "p7_home":"Worauf wartest du? Entdecke die besten Sexinserate und Kontakte auf figgmi.ch. Die sinnlichste Begegnung deines Lebens könnte nur wenige Klicks entfernt sein.",
+        
+
+
+
+
 
         "welcome_popup":"Diese Website ist für ein erwachsenes Publikum bestimmt. Wenn du die Seite besuchen möchtest, bestätige bitte, dass du mindestens 18 Jahre alt bist.",
         
@@ -81,6 +107,32 @@ $(function () {
         "contact_h1": "Contactez-nous",
         "contact_p": "Une question ou une remarque ? Écrivez-nous simplement un message!",
         
+
+        //home seo texts
+        "h1_home":"Annuaire d'escortes en Suisse",
+        "p1_home":"Bienvenue sur figgmi.ch, ton repère pour les plaisirs érotiques. À la recherche d'une aventure sensuelle et inoubliable ? Tu es au bon endroit !",
+
+        "h2_home1":"La TOP plateforme d'annonces d'escorte en Suisse",
+        "p2_home":"Que tu sois à Genève, Zurich, Lausanne ou ailleurs en Suisse, figgmi.ch te propose une sélection exclusive d'escortes et de services érotiques.",
+
+        "h2_home2":"Figgmi.ch : Le choix des connaisseurs",
+        "p3_home":"Facile, rapide, fiable. Trouve des contacts authentiques près de chez toi. Les meilleures annonces d'escortes en Suisse sont sur figgmi.ch. Inscris-toi dès maintenant et entre dans un monde de plaisir.",
+
+        "h2_home3":"Pour tous les goûts",
+        "p4_home":"Massages sensuels, rencontres exaltantes avec des professionnels, figgmi.ch offre une variété d'options pour satisfaire tes désirs. Notre plateforme est sûre et discrète. Viens essayer!",
+
+        "h2_home4":"Ta confiance, notre priorité",
+        "p4_home":"Chez figgmi.ch, nous accordons une grande importance à ta vie privée. Tes données sont en sécurité avec nous. Ta confiance est notre priorité absolue.",
+
+        "h2_home5":"Simple d'utilisation, difficile à oublier",
+        "p5_home":"Cherche, trouve, savoure. Grâce à notre interface conviviale, trouver ce que tu cherches est un jeu d'enfant. Une fois figgmi.ch, toujours figgmi.ch.",
+
+        "h2_home6":"Viens, rejoins-nous !",
+        "p6_home":"Qu'attends-tu ? Découvre les meilleures annonces d'escortes et services érotiques sur figgmi.ch. L'expérience la plus sensuelle de ta vie pourrait être à quelques clics.",
+
+
+
+
         "welcome_popup":"Ce site est destiné à un public adulte. Si tu souhaites visiter le site, confirme que tu as au moins 18 ans.",
 
         "call_me_now": "Appelle-moi",
@@ -94,6 +146,32 @@ $(function () {
         "menu_home": "Inizio",
         "menu_locations": "Cantoni",
         "menu_contact": "Contact us",
+
+
+        //home seo texts
+        "h1_home":"Annunci di escort della Svizzera",
+        "p1_home":"Benvenuto su figgmi.ch, il tuo punto di riferimento per i piaceri erotici. Sei alla ricerca di un'avventura sensuale e indimenticabile? Sei nel posto giusto!",
+
+        "h2_home1":"La piattaforma di annunci di escort TOP della Svizzera",
+        "p2_home":"Che tu sia a Zurigo, Ginevra, Lugano o altrove in Svizzera, figgmi.ch offre una selezione esclusiva di escort e servizi erotici.",
+
+        "h2_home2":"Figgmi.ch: La scelta per chi ne capisce",
+        "p3_home":"Facile, veloce, affidabile. Trova contatti autentici vicino a te. I migliori annunci di escort in Svizzera sono su figgmi.ch. Registrati subito ed entra in un mondo di piacere.",
+
+        "h2_home3":"C'è qualcosa per tutti",
+        "p4_home":"Massaggi sensuali, incontri emozionanti con professionisti, figgmi.ch offre una varietà di opzioni per soddisfare i tuoi desideri. La nostra piattaforma è sicura e discreta. Vieni a provare!",
+
+        "h2_home4":"La tua fiducia è la nostra priorità",
+        "p4_home":"Su figgmi.ch, la tua privacy è di estrema importanza per noi. Tutti i tuoi dati sono al sicuro, poiché tua fiducia è la nostra priorità assoluta.",
+
+        "h2_home5":"Facile da usare, difficile da dimenticare",
+        "p5_home":"Cerca, trova, godi. Grazie alla nostra interfaccia user-friendly, trovare ciò che cerchi è un gioco da ragazzi. Una volta su figgmi.ch, non potrai più farne a meno.",
+
+        "h2_home6":"Vieni, unisciti a noi!",
+        "p6_home":"Cosa stai aspettando? Scopri i migliori annunci di escort e servizi erotici su figgmi.ch. L'esperienza più sensuale della tua vita potrebbe essere a pochi clic di distanza.",
+
+
+
 
         "contact_name": "Nome *",
         "contact_email": "E-mail *",
