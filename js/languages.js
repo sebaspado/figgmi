@@ -39,7 +39,7 @@ $(function () {
       "deutsche": {
         "menu_home": "Home",
         "menu_locations": "Kantons",
-        "menu_contact": "Contact us",
+        "menu_contact": "kontaktiere uns",
         "disclaimer": "Wichtiger Hinweis - Bitte seien Sie vorsichtig, wenn ein Escort Sie bittet, im Voraus zu bezahlen. Figgmi.ch übernimmt KEINE Verantwortung für Betrug oder Scams.",
 
         "call_me_now": "Anrufen",
@@ -148,7 +148,7 @@ $(function () {
       "italiano": {
         "menu_home": "Inizio",
         "menu_locations": "Cantoni",
-        "menu_contact": "Contact us",
+        "menu_contact": "Contattaci",
 
 
         //home seo texts
