@@ -39,9 +39,9 @@ $(function () {
       "deutsche": {
         "menu_home": "Home",
         "menu_locations": "Kantons",
-        "menu_contact": "kontaktiere uns",
+        "menu_contact": "Kontaktiere uns",
         "disclaimer": "Wichtiger Hinweis - Bitte seien Sie vorsichtig, wenn ein Escort Sie bittet, im Voraus zu bezahlen. Figgmi.ch übernimmt KEINE Verantwortung für Betrug oder Scams.",
-
+        "contact_contact":"Kontakt",
         "call_me_now": "Anrufen",
         "report_profile": "Dieses Profil melden",
         "contact_name": "Name *",
@@ -94,7 +94,7 @@ $(function () {
         "menu_home": "Accueil",
         "menu_locations": "Cantons",
         "menu_contact": "Contactez-nous",
-
+        "contact_contact":"Contact",
         "contact_name": "Nom *",
         "contact_email": "E-mail *",
         "contact_phone": "Téléphone *",
@@ -150,7 +150,7 @@ $(function () {
         "menu_locations": "Cantoni",
         "menu_contact": "Contattaci",
 
-
+        "contact_contact":"Contatto",
         //home seo texts
         "h1_home":"Annunci di escort della Svizzera",
         "p1_home":"Benvenuto su figgmi.ch, il tuo punto di riferimento per i piaceri erotici. Sei alla ricerca di un'avventura sensuale e indimenticabile? Sei nel posto giusto!",
@@ -189,7 +189,6 @@ $(function () {
         
         "sign_h1": "Iscrizione",
         "sign_p": "Il sito web non è ancora finito. Se vuoi fare pubblicità con noi, lascia i tuoi dati di contatto e ti contatteremo una volta terminato.",
-
 
         "welcome_popup":"Questo sito web è destinato ad un pubblico adulto. Se desiderate visitare il sito, confermate di avere almeno 18 anni.",
 
