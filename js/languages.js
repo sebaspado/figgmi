@@ -25,6 +25,10 @@ $(function () {
         "contact_h1": "Contact us",
         "contact_p": "Any question or remarks? Just write us a message!",
 
+        "sign_h1": "Sign up",
+        "sign_p": "The website is not finished yet. If you want to advertise with us, leave your contact details and we'll contact you once it is finished.",
+
+
         "welcome_popup": "This website is an adult website. If you want to visit the site, please confirm that you are at least 18 years old.",
 
         
@@ -54,6 +58,11 @@ $(function () {
         "contact_h1": "kontaktiere uns",
         "contact_p": "Haben Sie Fragen oder Anmerkungen? Schreiben Sie uns einfach eine Nachricht!",
        
+        "sign_h1": "Registrieren",
+        "sign_p": "Die Website ist noch nicht fertig. Wenn Sie bei uns Werbung schalten möchten, hinterlassen Sie bitte Ihre Kontaktdaten und wir melden uns bei Ihnen, sobald es fertig ist.",
+
+
+
         //home seo texts
         "h1_home":"Sex und Erotik Inserate in der Schweiz",
         "p1_home":"Willkommen bei figgmi.ch, deiner Adresse für prickelnde Momente. Du suchst Spaß und Abenteuer? Du bist am richtigen Ort!",
@@ -101,6 +110,9 @@ $(function () {
         "contact_h1": "Contactez-nous",
         "contact_p": "Une question ou une remarque ? Écrivez-nous simplement un message!",
         
+        "sign_h1": "S'inscrire",
+        "sign_p": "Le site n'est pas encore terminé. Si vous souhaitez faire de la publicité avec nous, laissez vos coordonnées et nous vous contacterons une fois terminé.",
+
 
         //home seo texts
         "h1_home":"Annuaire d'escortes en Suisse",
@@ -175,6 +187,10 @@ $(function () {
         "contact_h1": "Contattaci",
         "contact_p": "Qualche domanda o commento? Scrivici un messaggio!",
         
+        "sign_h1": "Iscrizione",
+        "sign_p": "Il sito web non è ancora finito. Se vuoi fare pubblicità con noi, lascia i tuoi dati di contatto e ti contatteremo una volta terminato.",
+
+
         "welcome_popup":"Questo sito web è destinato ad un pubblico adulto. Se desiderate visitare il sito, confermate di avere almeno 18 anni.",
 
         "call_me_now": "Chiamami ",

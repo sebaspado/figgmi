@@ -137,93 +137,24 @@
                     <div class="col-md-12">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item">
+                              <!-- <li class="breadcrumb-item">
                                     <a  data-translate="menu_home" href="profiles.html">Home</a>
-                                </li>
+                                </li>--> 
                                 <li class="breadcrumb-item">
-                                    <a href="#">Contact</a>
+                                    <a href="#" data-translate="sign_h1">Sign up</a>
                                 </li>
                             </ol>
                         </nav>
                     </div>
                 </div>
-                <div class="form-cont">
 
-
-                    <!--   animations for contact form 
-
-                        <div class="pulse-box">
-                            <div style="box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.50) inset;" class="circle">
-                                <svg class="checkmark success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                                    <circle class="checkmark_circle_success" cx="26" cy="26" r="25" fill="none"/><path class="checkmark_check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" stroke-linecap="round"/></svg>
-                            </div>
-                            <svg class="pulse-svg" width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                              <circle class="circle first-circle" fill="#369A46" cx="25" cy="25" r="20"></circle>
-                              <circle class="circle second-circle" fill="#369A46" cx="25" cy="25" r="20"></circle>
-                              <circle class="circle third-circle" fill="#369A46" cx="25" cy="25" r="20"></circle>
-                             
-                            </svg>
-                            
-                          </div>
-
-
-
-                          <div class="pulse-box-error">
-                            <div style="box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.50) inset;" class="circle-error">
-                            <svg class="checkmark error" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark_circle_error" cx="26" cy="26" r="25" fill="none"/><path class="checkmark_check" stroke-linecap="round" fill="none" d="M16 16 36 36 M36 16 16 36
-                                "/></svg></div>
-                            <svg class="pulse-svg-error" width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                              <circle class="circle first-circle" fill="#DA2321" cx="25" cy="25" r="20"></circle>
-                              <circle class="circle second-circle" fill="#DA2321" cx="25" cy="25" r="20"></circle>
-                              <circle class="circle third-circle" fill="#DA2321" cx="25" cy="25" r="20"></circle>
-                             
-                            </svg>
-                            
-                          </div>
-                        -->
-
-                    <h1 data-translate="contact_h1">Contact us</h1>
-                    <p data-translate="contact_p">Any question or remarks? Just write us a message!</p>
+                <div class="form-login">
+                    <h1 data-translate="sign_h1">Sign up</h1>
+                    <p data-translate="sign_p">The website is not finished yet. If you want to advertise with us,
+                         leave your contact details and we'll contact you once it is finished. </p>
                     <form class="home-form">
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="select-box">
-                                    <div class="select-box__current" tabindex="1">
-                                      <div class="select-box__value">
-                                        <input class="select-box__input" type="radio" id="0" value="0" name="Select" checked="checked"/>
-                                        <span data-translate="contact_subject" class="select-box__input-text">Select subject</span>
-                                      </div>
-                                      <div class="select-box__value">
-                                        <input class="select-box__input" type="radio" id="1" value="1" name="Support"/>
-                                        <span class="select-box__input-text" data-translate="contact_support">Support</span>
-                                      </div>
-                                     
-                                      <div class="select-box__value">
-                                        <input class="select-box__input" type="radio" id="2" value="2" name="Advertising"/>
-                                        <span class="select-box__input-text" data-translate="contact_advertising">Advertising</span>
-                                      </div>
-                                      <div class="select-box__value">
-                                        <input class="select-box__input" type="radio" id="3" value="3" name="General"/>
-                                        <span class="select-box__input-text" data-translate="contact_general">General</span>
-                                      </div>
-                                    <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
-                                    </div>
-                                    <ul class="select-box__list">
-                                      <li>
-                                        <label class="select-box__option" for="1" data-translate="contact_support" aria-hidden="aria-hidden">Support </label>
-                                      </li>
-                                      <li>
-                                        <label class="select-box__option" for="2" aria-hidden="aria-hidden" data-translate="contact_advertising"> Advertising</label>
-                                      </li>
-                                      <li>
-                                        <label class="select-box__option" for="3" aria-hidden="aria-hidden" data-translate="contact_general"> General</label>
-                                      </li>
-                                
-                                    </ul>
-                                  </div>
-                            </div>
-
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <input data-translate="contact_name" 
                                     type="text"
                                     placeholder="Name *"
@@ -231,31 +162,27 @@
                                     class="home-textinput input">
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <input
                                     type="text"
                                     data-translate="contact_email" 
-                                    placeholder="Email "
+                                    placeholder="Email *"
                                     required
                                     class="home-textinput input error">
                                 <span class="error" data-translate="required_field_span">This field is required</span>
                             </div>
 
-                            <div class="col-md-6" >
+                            <div class="col-md-12">
                                 <input
                                     type="text"
-                                    data-translate="contact_phone"
+                                    data-translate="contact_phone" 
                                     placeholder="Phone *"
                                     required
                                     class="home-textinput input">
                             </div>
 
                         </div>
-                        <textarea  data-translate="contact_message"  placeholder="Your message *" class="home-textarea textarea"></textarea>
-                        <span class="required"  data-translate="required_field">
-                            <strong>*</strong> Required field
-                        </span>
-                        <button data-translate="contact_submit">Submit</button>
+                        <button data-translate="contact_submit">Send</button>
                     </form>
                 </div>
             </div>

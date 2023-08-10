@@ -1,0 +1,71 @@
+body {
+  background: rgb(255 232 232);
+}
+
+button.report {box-shadow:none;}
+
+.profile h2 {color:#000}
+
+.location svg {fill:#000} 
+
+.report {
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 4px;
+  color: rgb(255 255 255);
+  border: 1px solid rgb(255, 181, 84);
+background:#ffbfbf;
+  margin: 50px auto 34px;
+}
+
+a, p {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+
+.breadcrumb-item.active {
+  color: rgb(0, 0, 0);
+}
+
+header {
+  background: rgb(255, 255, 255);
+  border-image-source: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(255, 144, 144), rgba(255, 0, 0, 0));
+}
+
+header .logo {
+  background: transparent;
+}
+
+header nav ul li a, header nav .nav-link, header nav .nav-link:hover {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(0, 0, 0) !important;
+}
+
+.select-styled {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+}
+
+.bg-slider {
+  background: linear-gradient(89deg, rgb(255 205 205) 0%, rgb(255, 191, 191) 100%);
+}
+
+header .open-subMenu {
+  width: 11px;
+  height: 6px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='6' viewBox='0 0 11 6' fill='none'%3E%3Cpath d='M1.11843 0.851333C0.822505 1.14328 0.822505 1.61667 1.11843 1.90862L4.82573 5.56257C5.41773 6.14601 6.37695 6.14578 6.96864 5.56205L10.6745 1.90593C10.9705 1.61398 10.9705 1.14059 10.6745 0.848642C10.3786 0.556621 9.89878 0.556621 9.60284 0.848642L6.43098 3.97788C6.13498 4.26983 5.65522 4.26983 5.3593 3.97788L2.19011 0.851333C1.89419 0.559387 1.41435 0.559387 1.11843 0.851333Z' fill='black'/%3E%3C/svg%3E");
+}
+
+.slider .image img {
+    border: 1px solid rgb(255 255 255);
+box-shadow:none}

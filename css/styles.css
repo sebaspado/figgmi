@@ -568,10 +568,10 @@ h2 {
 }
 
 .form-cont {width:700px; margin:auto;text-align:center}
-
+.form-login {width:400px;margin:auto;text-align:center;}
 
 form {margin: 15px auto;text-align: center;}
-form .col-md-6 {position:relative;}
+form .col-md-6, form .col-md-12 {position:relative;}
 form input, form select {border-radius: 4px;border-radius: 4px;border: 1px solid #1C1B1B;background: #242424;height: 50px;padding: 12px 20px 12px 12px;color: rgb(255, 255, 255);width: 100%;margin-bottom: 20px;position:relative;font-size: 16px;font-weight: 100;}
 form input.error {border-radius: 4px;
 border: 1px solid #6A1716;
@@ -1542,7 +1542,7 @@ footer img {width:80%}
   -webkit-text-fill-color: transparent;
   font-weight: 700;
   }
-.contact p {color:#717171;margin-bottom:40px}
+.contact p {color: #fff;margin-bottom:40px}
 
 
 @media (max-width: 768px) {
@@ -1565,7 +1565,7 @@ footer img {width:80%}
   .select-options li {border:none !important;}
   span.error {right: 3%;}
  .custom-select {margin-bottom: 16px !important;} 
-.form-cont {width:100%}
+.form-cont, .form-login {width:100%}
 .row.no-padding-mobile {padding: 0 0 0 15px !important;}
 .no-padding-mobile .col-md-12 {padding:0}
 .cards {padding-top:0px}
@@ -1694,6 +1694,7 @@ footer .copyrights {padding:0 20px}
       padding: 0px 15px;
   }
 
+  .contact .row {padding:0}
   .card-view-1 {
       height: 170px;
       margin: 10px 0px;
