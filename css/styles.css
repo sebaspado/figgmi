@@ -215,7 +215,7 @@ header nav {
 
 header nav ul {
   display: flex;
-  width: 460px;
+  width: 555px;
   margin: 0px;
   padding: 0px;
   justify-content: space-between;
@@ -1402,9 +1402,10 @@ svg.pulse-svg-error .third-circle {
 
 .select-styled {
   position: absolute;
-  top: -4px;
+  top: -6px;
   right: 11px;
   bottom: 0;
+  font-size: 18px;
   font-weight: 100;
   left: 0;
   /* background-color: #c0392b; */
@@ -1481,7 +1482,8 @@ svg.pulse-svg-error .third-circle {
 
 @media (max-width: 1024px) {
 
-
+header nav ul {width:500px}
+  
   .img-footer {width:70px !important;}
   .eyes {width:40px !important;}
 

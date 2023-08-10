@@ -29,6 +29,7 @@
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;700&display=swap" rel="stylesheet">
     </head>
     <body class="home">
+        
         <header>
             <div class="container">
                 <div class="logo">
@@ -38,9 +39,10 @@
                     <ul>
                         <li>
                             <a data-translate="menu_home" class="nav-link" href="profiles.html">Home</a>
+                           
                         </li>
                         <li class="locations-li">
-                            <a class="nav-link sub" data-translate="menu_locations" href="#about-us">Locations</a>
+                            <a class="nav-link sub" data-translate="menu_locations" href="#about-us">Locations </a>
                             <div class="subMenu-locations">
                                 <a href="">Zurich</a>
                                 <a href="">Berne</a>
@@ -62,14 +64,22 @@
                             <a class="nav-link" data-translate="menu_contact" href="contact.html">Contact us</a>
                         </li>
                         <li>
+                            <a data-translate="sign_h1" class="nav-link" href="signup.html">
+                                 Sign up
+                            </a>
+                        </li>
+
+
+                        <li>
                             <select class="select" id="lang">
                                 <option>Deutsche</option>
                                 <option>Français</option>
-                                <option>Italiano</option>
+                                <option>Italiano</option> 
                             </select>
                         </li>
                     </ul>
                 </nav>
+
                 <!-- mobile menu -->
                 <input type="checkbox" id="nav-control" class="nav-control">
                 <label for="nav-control" class="toggle-button">
@@ -82,30 +92,29 @@
                         <li>
                             <span>
                                 <img src="img/home-icon.svg" alt="home icon">
-                            </span>
+                            </span> 
                             <a data-translate="menu_home" class="nav-link" href="profiles.html">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <span>
+                             <span>
                                 <img src="img/location-icon.svg" alt="home icon">
-                            </span>
+                                    </span>
                             <div class="inner">
-                                <input type="checkbox" id="toggle" checked>
-                                <span class="open-location"></span>
+                                <input type="checkbox" id="toggle" checked><span class="open-location"></span>
                                 <label data-translate="menu_locations" for="toggle">
-                                    Locations
+                                    Locations    
                                 </label>
                                 <div class="content">
                                     <a href="">Zurich</a>
                                     <a href="">Berne</a>
                                     <a href="">Vaud</a>
                                     <a href="">St. Gallen</a>
-                                    <a href=""> Geneva</a>
+                                    <a href="">Geneva</a>
                                     <a href="">Lucerne</a>
                                     <a href="">Valais</a>
-                                    <a href=""> Friburg</a>
+                                    <a href="">Friburg</a>
                                     <a href="">Basel</a>
                                     <a href="">Solothurn</a>
                                     <a href="">Thurgau</a>
@@ -119,9 +128,20 @@
                                 <img src="img/contact-icon.svg" alt="home icon">
                             </span>
                             <a data-translate="menu_contact" class="nav-link" href="contact.html">
-                                Contact us
+                                 Contact us
                             </a>
                         </li>
+                        <li>
+                            <span>
+                                <img src="img/signup.svg" alt="home icon">
+                            </span>
+                            <a data-translate="sign_h1" class="nav-link" href="signup.html">
+                                 Sign up
+                            </a>
+                        </li>
+
+
+
                         <li>
                             <span class="language-icon">
                                 <img src="img/language-icon.svg" alt="home icon">
@@ -129,14 +149,16 @@
                             <select class="select" id="lang">
                                 <option>Deutsche</option>
                                 <option>Français</option>
-                                <option>Italiano</option>
+                                <option>Italiano</option> 
                             </select>
                         </li>
                     </ul>
                 </nav>
                 <!--menu mobile ends -->
+
             </div>
         </header>
+
         <main class="bg-grey">
             <div class="locations">
                 <div class="container desk-only">
