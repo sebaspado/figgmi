@@ -211,6 +211,16 @@ $(function () {
       });
   };
 
+  var set_lang = function (dictionary) {
+    $("[data-translate]").each(function(){
+       if($(this).is( "input" )){
+          $(this).attr('placeholder',dictionary[$(this).data("translate")] )
+       } else{
+           $(this).text(dictionary[$(this).data("translate")])
+       }
+    })
+};
+
 
   $(".select-options > li").on("click", function () { 
       var language = $(this).attr("rel").toLowerCase();
