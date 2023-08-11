@@ -12,6 +12,21 @@ $(".sub").click(function(){
   $(".open-subMenu").toggleClass("up");
 });
 
+
+
+
+$("#toggle").click(function(){
+  $(".open-language").toggleClass("upLang");
+});
+
+
+$(".subLang").click(function(){
+  $(".subMenu-lang").toggleClass("showLang");
+  $(".open-subMenuLang").toggleClass("upLang");
+});
+
+
+
 $(window).scroll(function() {    
   var scroll = $(window).scrollTop();
   if (scroll >= 1) {
