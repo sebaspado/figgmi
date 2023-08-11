@@ -9,7 +9,7 @@ $(function () {
         "menu_home": "Home",
         "menu_locations": "Locations",
         "menu_contact": "Contact us",
-
+        "location":"Location",
         "call_me_now": "Call me now",
         "report_profile": "Report this profile",
         "disclaimer": "Important notice - Please be careful if an escort asks you to pay in advance.Figgmi.ch does NOT take responsibility for fraud or scams.",
@@ -39,7 +39,8 @@ $(function () {
       "deutsche": {
         "menu_home": "Home",
         "menu_locations": "Kantons",
-        "menu_contact": "Kontaktiere uns",
+        "location":"Kanton",
+        "menu_contact": "Kontaktiere Uns",
         "disclaimer": "Wichtiger Hinweis - Bitte seien Sie vorsichtig, wenn ein Escort Sie bittet, im Voraus zu bezahlen. Figgmi.ch übernimmt KEINE Verantwortung für Betrug oder Scams.",
         "contact_contact":"Kontakt",
         "call_me_now": "Anrufen",
@@ -93,6 +94,7 @@ $(function () {
       "français": {
         "menu_home": "Accueil",
         "menu_locations": "Cantons",
+        "location":"Canton",
         "menu_contact": "Contactez-nous",
         "contact_contact":"Contact",
         "contact_name": "Nom *",
@@ -149,6 +151,7 @@ $(function () {
         "menu_home": "Inizio",
         "menu_locations": "Cantoni",
         "menu_contact": "Contattaci",
+        "location":"Cantone",
 
         "contact_contact":"Contatto",
         //home seo texts
