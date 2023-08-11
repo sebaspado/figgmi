@@ -197,40 +197,15 @@
                     <form class="home-form">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="select-box">
-                                    <div class="select-box__current" tabindex="1">
-                                      <div class="select-box__value">
-                                        <input class="select-box__input" type="radio" id="0" value="0" name="Select" checked="checked"/>
-                                        <span data-translate="contact_subject" class="select-box__input-text">Select subject</span>
-                                      </div>
 
-                                      <div class="select-box__value">
-                                        <input class="select-box__input" type="radio" id="1" value="1" name="Support"/>
-                                        <span class="select-box__input-text" data-translate="contact_support">Support</span>
-                                      </div>
-                                     
-                                      <div class="select-box__value">
-                                        <input class="select-box__input" type="radio" id="2" value="2" name="Advertising"/>
-                                        <span class="select-box__input-text" data-translate="contact_advertising">Advertising</span>
-                                      </div>
-                                      <div class="select-box__value">
-                                        <input class="select-box__input" type="radio" id="3" value="3" name="General"/>
-                                        <span class="select-box__input-text" data-translate="contact_general">General</span>
-                                      </div>
-                                    <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
-                                    </div>
-                                    <ul class="select-box__list">
-                                      <li>
-                                        <label class="select-box__option" for="1" data-translate="contact_support" aria-hidden="aria-hidden">Support </label>
-                                      </li>
-                                      <li>
-                                        <label class="select-box__option" for="2" aria-hidden="aria-hidden" data-translate="contact_advertising"> Advertising</label>
-                                      </li>
-                                      <li>
-                                        <label class="select-box__option" for="3" aria-hidden="aria-hidden" data-translate="contact_general"> General</label>
-                                      </li>
-                                
+                                <div class="select-contact">
+                                    <span data-translate="contact_subject" class="placeholder">Betreff auswählen</span>
+                                    <ul>
+                                      <li data-translate="contact_support" data-value="support">Support</li>
+                                      <li data-translate="contact_advertising" data-value="adv">Advertising</li>
+                                      <li data-translate="contact_general" data-value="gral">General</li>
                                     </ul>
+                                    <input type="hidden" name="changeme"/>
                                   </div>
                             </div>
 
@@ -342,5 +317,20 @@
         <script src="js/menu.js"></script>
         <script type="text/javascript" src="js/slick.js"></script>
         <script type="text/javascript" src="js/languages.js"></script>
+        <script>
+            $('.select-contact').on('click','.placeholder',function(){
+  var parent = $(this).closest('.select-contact');
+  if ( ! parent.hasClass('is-open')){
+    parent.addClass('is-open');
+    $('.select-contact.is-open').not(parent).removeClass('is-open');
+  }else{
+    parent.removeClass('is-open');
+  }
+}).on('click','ul>li',function(){
+  var parent = $(this).closest('.select-contact');
+  parent.removeClass('is-open').find('.placeholder').text( $(this).text() );
+  parent.find('input[type=hidden]').attr('value', $(this).attr('data-value') );
+});
+        </script>
     </body>
 </html>

@@ -1752,120 +1752,93 @@ footer .copyrights {padding:0 20px}
 
 
 
-
-
-
-.select-box {
+.select-contact {
   position: relative;
   display: block;
-  z-index: 999;
-  width: 100%;
   margin: 0 auto;
-  font-size: 18px;
-  color: #fff;
+  width: 100%;
+  /* max-width: 325px; */
+  color: #cccccc;
+  vertical-align: middle;
   text-align: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
-
-@media (min-width: 769px) {
-  .select-box {
-    width: 100%;
-    font-size:16px; font-weight:100;
-  }
-}
-
-.select-box__current {
+.select-contact  .placeholder {
   position: relative;
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  outline: none;
-}
-.select-box__current:focus + .select-box__list {
-  opacity: 1;
-  -webkit-animation-name: none;
-          animation-name: none;
-}
-.select-box__current:focus + .select-box__list .select-box__option {
-  cursor: pointer;
-}
-.select-box__current:focus .select-box__icon {
-  transform: translateY(-50%) rotate(180deg);
-}
-.select-box__icon {
-  position: absolute;
-  top: 25px;
-  right: 15px;
-  transform: translateY(-50%);
-  width: 20px;
-  opacity: 0.3;
-  transition: 0.2s ease;
-  clip-path: inherit;
-  filter: invert(1);
-  opacity: 1;
-}
-.select-box__value {
-  display: flex;
-}
-.select-box__input {
-  display: none;
-}
-.select-box__input:checked + .select-box__input-text {
   display: block;
-}
-.select-box__input-text {
-  display: none;
-  width: 100%;
-  margin: 0;
-  padding: 12px;
-  background-color: #242424;
-  border-radius: 4px;
-  height: 48px;
   border: 1px solid #1C1B1B;
-  margin-bottom: 16px;
-  font-weight: 100;
+    background: #242424;
+  z-index: 1;
+  padding: 12px 20px 12px 12px;
+  border-radius: 2px;
+  cursor: pointer;
 }
-.select-box__list {
+.select-contact .placeholder:hover {
+  background: #34383c;
+}
+.select-contact .placeholder:after {
+ width: 13px;
+ height: 8px;
+ top: 21px;
+ /* bottom: 0; */
+ margin: auto 0;
+ position: absolute;
+ right: 10px;
+ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='8' viewBox='0 0 13 8' fill='none'%3E%3Cpath d='M0.386305 0.598942C0.0045671 0.975552 0.00456704 1.58623 0.386305 1.96284L5.16873 6.67644C5.9324 7.42908 7.1698 7.42878 7.93308 6.67577L12.7137 1.95937C13.0954 1.58276 13.0954 0.972081 12.7137 0.595471C12.3319 0.218764 11.713 0.218764 11.3312 0.59547L7.2395 4.63219C6.85767 5.0088 6.23877 5.0088 5.85703 4.63219L1.76877 0.598942C1.38703 0.222331 0.768043 0.222331 0.386305 0.598942Z' fill='white'/%3E%3C/svg%3E");
+ content: " ";
+ z-index: 9999990;
+}
+.select-contact.is-open .placeholder:after {
+  content: " ";
+  width: 13px;
+  height: 8px;
+  top: 18px;
+  /* bottom: 0; */
+  margin: auto 0;
   position: absolute;
+  right: 10px;
+  transform: rotate(180deg) !important;
+}
+.select-contact .is-open ul {
+  display: block !important;
+}
+.select-contact .select--white .placeholder {
+  background: #fff;
+  color: #999;
+}
+.select-contact .select--white .placeholder:hover {
+  background: #fafafa;
+}
+
+.select-contact.is-open ul {display:block !important}
+.select-contact ul {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  overflow-y: auto;
   width: 100%;
-  padding: 0;
+  background: #171616;
+  border-radius: 2px;
+  top: 100%;
+  left: 0;
   list-style: none;
-  opacity: 0;
-  -webkit-animation-name: HideList;
-          animation-name: HideList;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: step-start;
-          animation-timing-function: step-start;
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  margin: 5px 0 0 0;
+  padding: 0;
+  z-index: 999999;
+  /* max-height: 120px; */
 }
-.select-box__option {
+.select-contact  ul li {
   display: block;
-  padding: 12px;
-  background-color: #181818;
-  border-radius:4px;
+  text-align: left;
+  padding: 0.8em 1em 0.8em 1em;
+  color: #999;
+  cursor: pointer;
 }
-.select-box__option:hover, .select-box__option:focus {
+.select-contact  ul li:hover {
+  background: #313131;
   color: #fff;
-  background-color: #0f0f0f;
-}
-
-@-webkit-keyframes HideList {
-  from {
-    transform: scaleY(1);
-  }
-  to {
-    transform: scaleY(0);
-  }
-}
-
-@keyframes HideList {
-  from {
-    transform: scaleY(1);
-  }
-  to {
-    transform: scaleY(0);
-  }
 }
