@@ -196,6 +196,8 @@
   margin: 0px;
   padding: 0px;
   font-size:22px !important;
+  z-index: 9999999;
+  top: 17px;
 }
 
 input[type="checkbox"] {
@@ -217,7 +219,7 @@ input[type="checkbox"]:checked ~ label ~ .content {
 .open-location {
   width: 15px;
   height: 8px;
-  top: 28px;
+  top: 29px;
   margin: auto 0px;
   position: fixed;
   left: 133px;
@@ -228,7 +230,7 @@ input[type="checkbox"]:checked ~ label ~ .content {
 .open-location.up {
   width: 15px;
   height: 8px;
-  top: 30px;
+  top: 28px;
   margin: auto 0px;
   position: absolute;
   right: 28px;
