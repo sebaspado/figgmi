@@ -21,10 +21,140 @@
         <link href="https://fonts.googleapis.com/css?family=Monoton" rel='stylesheet' type='text/css'>
         
     </head>
-    <body class="contact">
+    <body class="contact bg404">
       
-      
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img alt="figgmi.ch" src="img/Figgmi-logo.svg">
+                </div>
+                <nav class="nav-bar">
+                    <ul>
+                        <li>
+                            <a data-translate="menu_home" class="nav-link" href="profiles.html">Home</a>
+                           
+                        </li>
+                        <li class="locations-li">
+                            <a class="nav-link sub" data-translate="menu_locations" href="#about-us">Locations </a>
+                            <div class="subMenu-locations">
+                                <a href="">Zurich</a>
+                                <a href="">Berne</a>
+                                <a href="">Vaud</a>
+                                <a href="">St. Gallen</a>
+                                <a href=""> Geneva</a>
+                                <a href="">Lucerne</a>
+                                <a href="">Valais</a>
+                                <a href=""> Friburg</a>
+                                <a href="">Basel</a>
+                                <a href="">Solothurn</a>
+                                <a href="">Thurgau</a>
+                                <a href="">Aargau</a>
+                                <a href=""> Tessin</a>
+                            </div>
+                            <span class="open-subMenu"></span>
+                        </li>
+                        <li>
+                            <a class="nav-link" data-translate="menu_contact" href="contact.html">Contact us</a>
+                        </li>
 
+                        <li>
+                            <a data-translate="sign_h1" class="nav-link" href="signup.html">
+                                 Sign up
+                            </a>
+                        </li>
+
+                        <li class="language-li">
+                            <a class="nav-link subLang" href="#about-us">Deutsche </a>
+                            <div class="subMenu-lang">
+                                <a href="">Français</a>
+                                <a href="">Italiano</a>
+                            </div>
+                            <span class="open-subMenuLang"></span>
+                        </li>
+
+
+                    </ul>
+                </nav>
+
+                <!-- mobile menu -->
+                <input type="checkbox" id="nav-control" class="nav-control">
+                <label for="nav-control" class="toggle-button">
+                    <div class="wolverine">
+                        <div class="claws"></div>
+                    </div>
+                </label>
+                <nav class="navigation">
+                    <ul>
+                        <li>
+                            <span>
+                                <img src="img/home-icon.svg" alt="home icon">
+                            </span> 
+                            <a data-translate="menu_home" class="nav-link" href="profiles.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                             <span>
+                                <img src="img/location-icon.svg" alt="home icon">
+                                    </span>
+                            <div class="inner">
+                                <input type="checkbox" id="toggle" checked><span class="open-location"></span>
+                                <label data-translate="menu_locations" for="toggle">
+                                    Locations    
+                                </label>
+                                <div class="content">
+                                    <a href="">Zurich</a>
+                                    <a href="">Berne</a>
+                                    <a href="">Vaud</a>
+                                    <a href="">St. Gallen</a>
+                                    <a href="">Geneva</a>
+                                    <a href="">Lucerne</a>
+                                    <a href="">Valais</a>
+                                    <a href="">Friburg</a>
+                                    <a href="">Basel</a>
+                                    <a href="">Solothurn</a>
+                                    <a href="">Thurgau</a>
+                                    <a href="">Aargau</a>
+                                    <a href=""> Tessin</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="img/contact-icon.svg" alt="home icon">
+                            </span>
+                            <a data-translate="menu_contact" class="nav-link" href="contact.html">
+                                 Contact us
+                            </a>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="img/signup.svg" alt="home icon">
+                            </span>
+                            <a data-translate="sign_h1" class="nav-link" href="contact.html">
+                                 Sign up
+                            </a>
+                        </li>
+
+
+                        <li class="language-li">
+                            <span class="language-icon">
+                                <img src="img/language-icon.svg" alt="home icon">
+                            </span>
+                            <a class="nav-link subLang" href="#about-us">Deutsche </a>
+                            <div class="subMenu-lang">
+                                <a href="">Français</a>
+                                <a href="">Italiano</a>
+                            </div>
+                            <span class="open-subMenuLang"></span>
+                        </li>
+
+                    </ul>
+                </nav>
+                <!--menu mobile ends -->
+
+            </div>
+        </header>
         <main class="mt-20">
             <div class="container">
                 <div class="row">
@@ -32,9 +162,9 @@
                         
 
                         <div class="board">
-                            <p class="no">Error</p>
+                         <!--  <p class="no">Error</p>--> 
                             <p class="vacancy">404</p>
-                            </div>
+
 
                             <a href="index.html" class="call-me">
                                 <span data-translate="call_me_now">Go home</span>
@@ -43,14 +173,78 @@
                                 </span> 
                             </a>
 
+
+                            </div>
+
+
                     </div>
                 </div>
                 
             </div>
         </main>
 
+        <footer>
+            <!--arrow -->
+            <div class="arrow-background">
+                <a href="#top" class="arrow-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M24.5561 19.2973C25.148 18.7134 25.148 17.7667 24.5561 17.1828L17.1415 9.87486C15.9575 8.70798 14.0391 8.70844 12.8557 9.87589L5.4439 17.1881C4.85203 17.772 4.85203 18.7188 5.4439 19.3027C6.03579 19.8868 6.99541 19.8868 7.5873 19.3027L13.931 13.0442C14.523 12.4603 15.4825 12.4603 16.0744 13.0442L22.4128 19.2973C23.0046 19.8812 23.9643 19.8812 24.5561 19.2973Z" fill="white"/>
+                    </svg>
+                </a>
+                </div>
+                <!--arrow ends -->
 
-      
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-md-12 col-lg-2">
+                        <div class="logo">
+                            <img alt="figgmi.ch"
+                                src="img/Figgmi-logo.svg"/></div>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2">
+                        <ul>
+                            <li><a href="">Make a report</a></li>
+                            <li><a href="">T&Cs</a> </li>
+                            <li><a href="">Cookies policy</a></li>
+                            <li> <a href="">Privacy policy</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-lg-2">
+                        <ul>
+                            <li><a href="">DMCA</a></li>
+                            <li><a href="">2257 Policy</a> </li>
+                            <li> <a href="">Report Trafficking</a></li>
+                            <li> <a href="">Content Removal</a></li>
+                        </ul>
+                    </div>
+
+                        <div class="col-md-2 col-lg-2">
+                        <ul>
+                            <li class="mb-4"><a href=""><img class="img-footer" src="img/rta.png" alt="rta link"></a></li>
+                            <li><a href=""><img src="img/asa.png" class="img-footer" alt="rta link"></a></li>
+                        </ul>
+                        </div>
+                        <div class="col-md-2 col-lg-2">
+                            <ul>
+                            <li class="mb-4"><a href=""><img class="img-footer" src="img/dm.png" alt="rta link"></a></li>
+                            <li><a href=""><img src="img/unseen.png" class="img-footer" alt="rta link"></a></li>
+                        </div>
+                        <div class="col-md-2 col-lg-2">
+                            <ul> <li><a href=""><img src="img/eyes.png" class="img-footer eyes" alt="rta link"></a></li></ul></ul>
+                        </div>
+                </div>
+            </div>
+
+            <div class="copyrights border-gradient-red-top">
+                <div class="container">
+                    <p>Copyright ©  2023</p>
+                       <p> This website is operated by: European Media Limited, 7 Bell Yard, Westminster, London, WC2A 2JR,  United Kingdom.</p>
+                       <p>All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
 
         
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

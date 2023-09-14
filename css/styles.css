@@ -1903,15 +1903,21 @@ footer ul li {width: 45%;display: inline-block;}
   list-style: circle;
 }
 
-
+.bg404 {background: url("../img/bg404.jpg"); background-size: cover;}
 
 .board {
+  display: flex;
   text-align: center;
   border-radius: 4px;
   width: 500px;
   margin: 50px auto 0 auto;
   padding: 20px;
-
+  height: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  a.call-me {margin: auto !important;}
 }
 
 .board p {
@@ -1922,7 +1928,7 @@ footer ul li {width: 45%;display: inline-block;}
 }
 
 .error-404 {
-.call-me {margin: auto;}
+
 }
 
 @media (max-width:768px) {
